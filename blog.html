@@ -463,5 +463,13 @@
         renderPosts(currentPage);
         renderPagination();
     </script>
+    <script>
+  const btnn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btnn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
 </body>
 </html>
