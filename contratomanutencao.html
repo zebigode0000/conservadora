@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="absolute top-0 left-0 w-full z-50">
+  <nav class="bg-transparent">
+    <div class="max-w-7xl px-4 sm:px-6 bg-gray-200/60 backdrop-blur-sm rounded-full m-auto my-3 shadow-lg">
+      <div class="h-20 flex items-center justify-between ">
+
+        <a href="index.html" class="shrink-0">
+          <img src="imagens/logo.webp" alt="Conservadora Paulista" class="h-12 md:h-14 w-auto object-contain">
+        </a>
+
+        <div class="hidden md:flex items-center gap-4">
+          <ul class="flex items-center gap-2 text-sm font-medium text-slate-800">
+            <li><a href="index.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Home</a></li>
+            <li><a href="contratomanutencao.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Contrato de Manutenção</a></li>
+
+            <li class="relative group">
+              <a href="#" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full flex items-center gap-1 transition">
+                Produtos <span class="text-[10px]">▼</span>
+              </a>
+              <ul class="absolute top-full left-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover:block z-30">
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Bombas d'água <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-72 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="Produtos/incendio.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Bombas Combate a Incêndio</a></li>
+                    <li><a href="Produtos/monoestagio.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Monoestágio</a></li>
+                    <li><a href="Produtos/multiestagio.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Multiestágio</a></li>
+                    <li><a href="Produtos/hidromassage.html" class="block px-4 py-3 hover:bg-slate-50">Bombas para Hidromassagem</a></li>
+                    <li><a href="Produtos/submersas.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Submersas</a></li>
+                    <li><a href="Produtos/submersiveis.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Submersíveis</a></li>
+                    <li><a href="Produtos/Pressurizacao.html" class="block px-4 py-3 hover:bg-slate-50">Bombas de Pressurização</a></li>
+                    <li><a href="Produtos/recirculacao.html" class="block px-4 py-3 hover:bg-slate-50">Bombas de Recirculação</a></li>
+                    <li><a href="Produtos/esgoto.html" class="block px-4 py-3 hover:bg-slate-50">Bombas para Esgoto</a></li>
+                    <li><a href="Produtos/piscina.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Bombas para Piscinas</a></li>
+                  </ul>
+                </li>
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50">Válvulas <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-72 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="Produtos/valvularedutora.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Válvula Redutora de Pressão</a></li>
+                    <li><a href="Produtos/valvula-controladora-bomba.html" class="block px-4 py-3 hover:bg-slate-50">Válvula Controladora de Bomba</a></li>
+                    <li><a href="Produtos/valvula-controladora-nivel.html" class="block px-4 py-3 hover:bg-slate-50">Válvula Controladora de Nível</a></li>
+                    <li><a href="Produtos/valvula-alivio-pressao.html" class="block px-4 py-3 hover:bg-slate-50">Válvula de Alívio Rápido de Pressão</a></li>
+                    <li><a href="Produtos/valvula-antecipadora-onda.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Válvula Antecipadora de Onda</a></li>
+                  </ul>
+                </li>
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Acessórios e Peças <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-64 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="Produtos/conexao-hidraulica.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Conexões Hidráulicas</a></li>
+                    <li><a href="Produtos/filtro-piscina.html" class="block px-4 py-3 hover:bg-slate-50">Filtro para Piscinas</a></li>
+                    <li><a href="Produtos/pecas-bombas.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Peças para Bombas</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full flex items-center gap-1 transition">
+                Serviços <span class="text-[10px]">▼</span>
+              </a>
+              <ul class="absolute top-full left-0 w-56 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover:block z-30">
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Assistência Técnica <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-56 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="autorizadas.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Autorizada</a></li>
+                    <li><a href="#" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Mais Fabricantes</a></li>
+                  </ul>
+                </li>
+                <li><a href="instEletrica.html" class="block px-4 py-3 hover:bg-slate-50">Instalações Elétricas</a></li>
+                <li><a href="instHidr.html" class="block px-4 py-3 hover:bg-slate-50">Instalações Hidráulicas</a></li>
+                <li><a href="modernInst.html" class="block px-4 py-3 hover:bg-slate-50">Modernização de Instalações</a></li>
+                <li><a href="sistPiscina.html" class="block px-4 py-3 hover:bg-slate-50">Sistemas de Piscinas</a></li>
+                <li><a href="projetos.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Projetos</a></li>
+              </ul>
+            </li>
+
+            <li><a href="contato.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Contato</a></li>
+            <li><a href="Sobre.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Empresa</a></li>
+            <li><a href="blog.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Blog</a></li>
+          </ul>
+
+          <a href="https://www.lojabombaspaulista.com.br" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition">
+            Loja Virtual
+          </a>
+        </div>
+
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-slate-200 bg-white/90 text-slate-800">
+          <svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden hidden mt-2 mx-4 rounded-2xl border border-slate-200 bg-white shadow-xl max-h-[80vh] overflow-y-auto">
+      <div class="px-4 py-4 space-y-2">
+        <a href="index.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Home</a>
+        <a href="contratomanutencao.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Contrato de Manutenção</a>
+
+        <details class="group rounded-xl border border-slate-200 bg-slate-50">
+          <summary class="list-none px-4 py-3 flex items-center justify-between cursor-pointer text-slate-800">
+            <span>Produtos</span>
+            <span class="transition group-open:rotate-180">⌄</span>
+          </summary>
+          <div class="px-4 pb-3 space-y-2 text-sm text-slate-700">
+            
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Bombas d'água <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="Produtos/incendio.html" class="block py-2">Bombas Combate a Incêndio</a>
+                <a href="Produtos/monoestagio.html" class="block py-2">Bombas Monoestágio</a>
+                <a href="Produtos/multiestagio.html" class="block py-2">Bombas Multiestágio</a>
+                <a href="Produtos/hidromassage.html" class="block py-2">Bombas para Hidromassagem</a>
+                <a href="Produtos/submersas.html" class="block py-2">Bombas Submersas</a>
+                <a href="Produtos/submersiveis.html" class="block py-2">Bombas Submersíveis</a>
+                <a href="Produtos/Pressurizacao.html" class="block py-2">Bombas de Pressurização</a>
+                <a href="Produtos/recirculacao.html" class="block py-2">Bombas de Recirculação</a>
+                <a href="Produtos/esgoto.html" class="block py-2">Bombas para Esgoto</a>
+                <a href="Produtos/piscina.html" class="block py-2">Bombas para Piscinas</a>
+              </div>
+            </details>
+
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Válvulas <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="Produtos/valvularedutora.html" class="block py-2">Válvula Redutora de Pressão</a>
+                <a href="Produtos/valvula-controladora-bomba.html" class="block py-2">Válvula Controladora de Bomba</a>
+                <a href="Produtos/valvula-controladora-nivel.html" class="block py-2">Válvula Controladora de Nível</a>
+                <a href="Produtos/valvula-alivio-pressao.html" class="block py-2">Válvula de Alívio Rápido de Pressão</a>
+                <a href="Produtos/valvula-antecipadora-onda.html" class="block py-2">Válvula Antecipadora de Onda</a>
+              </div>
+            </details>
+
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Acessórios e Peças <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="Produtos/conexao-hidraulica.html" class="block py-2">Conexões Hidráulicas</a>
+                <a href="Produtos/filtro-piscina.html" class="block py-2">Filtro para Piscinas</a>
+                <a href="Produtos/pecas-bombas.html" class="block py-2">Peças para Bombas</a>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-slate-200 bg-slate-50">
+          <summary class="list-none px-4 py-3 flex items-center justify-between cursor-pointer text-slate-800">
+            <span>Serviços</span>
+            <span class="transition group-open:rotate-180">⌄</span>
+          </summary>
+          <div class="px-4 pb-3 space-y-2 text-sm text-slate-700">
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Assistência Técnica <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="autorizadas.html" class="block py-2">Autorizada</a>
+                <a href="#" class="block py-2">Mais Fabricantes</a>
+              </div>
+            </details>
+            <a href="instEletrica.html" class="block py-2">Instalações Elétricas</a>
+            <a href="instHidr.html" class="block py-2">Instalações Hidráulicas</a>
+            <a href="modernInst.html" class="block py-2">Modernização de Instalações</a>
+            <a href="sistPiscina.html" class="block py-2">Sistemas de Piscinas</a>
+            <a href="projetos.html" class="block py-2">Projetos</a>
+          </div>
+        </details>
+
+        <a href="contato.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Contato</a>
+        <a href="Sobre.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Empresa</a>
+        <a href="blog.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Blog</a>
+
+        <a href="https://www.lojabombaspaulista.com.br" class="block text-center bg-orange-500 text-white px-4 py-3 rounded-xl font-semibold hover:bg-orange-600 transition mt-3">
+          Loja Virtual
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="bg-[#f5f7fb] text-slate-800 pt-10">
+
+  <a href="contato.html"
+   class="fixed bottom-[20px] right-[16px] md:bottom-6 md:right-6 z-[9999] bg-[#25D366] p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.434 5.628 1.435h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+
+</a>
+  <!-- SECTION 1 - INTRODUÇÃO -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-start">
+
+        <!-- TEXTO -->
+        <div>
+          
+
+          <h1 class="mt-5 text-3xl md:text-5xl font-extrabold italic leading-tight text-slate-900">
+            Manutenção de bombas, sistema elétrico e hidráulico
+          </h1>
+
+          <div class="mt-6 space-y-5 text-[15px] md:text-base leading-relaxed text-slate-600">
+            <p>
+              De acordo com a NBR 5462/1992 da Associação Brasileira de Normas Técnicas, a manutenção é o conjunto de ações técnicas e administrativas voltadas para manter ou recuperar um item em condições adequadas de funcionamento. Na Conservadora Paulista, você encontra manutenção para diferentes equipamentos: bombas hidráulicas, componentes de sistemas elétricos e componentes de sistemas hidráulicos.
+            </p>
+
+            <p>
+              As bombas d’água são fundamentais para o transporte de líquidos, mas o uso frequente e o desgaste natural podem comprometer sua eficiência. Por isso, a manutenção preventiva das bombas hidráulicas é uma excelente forma de evitar falhas, reduzir custos e preservar o desempenho dos equipamentos.
+            </p>
+
+            <p>
+              A manutenção dos sistemas elétricos e hidráulicos em condomínios, casas, empresas e comércios é essencial para garantir segurança, prevenir riscos e manter o funcionamento adequado de toda a infraestrutura.
+            </p>
+
+            <p>
+              Conheça abaixo os planos e serviços que a Conservadora Paulista oferece para atender cada necessidade com mais eficiência e tranquilidade.
+            </p>
+          </div>
+        </div>
+
+        <!-- IMAGENS -->
+        <div class="space-y-6">
+          <div class="overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(15,23,42,0.12)]">
+            <img src="imagens/trabalhador1.webp " alt="Técnico realizando manutenção" class="w-full h-[260px] object-cover object-center">
+          </div>
+
+          <div class="overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(15,23,42,0.12)]">
+            <img src="imagens/trabalhador2.webp" alt="Sistema hidráulico" class="w-full h-[220px] object-cover">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 - CONTRATOS -->
+  <section class="pb-20">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900">
+          Planos de manutenção
+        </h2>
+        <p class="mt-4 text-slate-600 leading-relaxed">
+          Escolha a modalidade mais adequada para sua necessidade, com opções pensadas para condomínios, empresas e residências.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+        <!-- CARD 1 -->
+        <div class="bg-white rounded-[32px] p-8 border border-slate-200 shadow-[0_15px_40px_rgba(15,23,42,0.06)] hover:-translate-y-1 transition">
+          <div class="w-16 h-16 rounded-2xl bg-sky-50 flex items-center justify-center mx-auto">
+            <i class="fa-solid fa-gear text-3xl text-[#587C99]"></i>
+          </div>
+          <h3 class="mt-6 text-center text-xl font-bold text-slate-900">Contrato de Manutenção Integral</h3>
+          <ul class="mt-6 space-y-3 text-sm text-slate-600 text-center">
+            <li>Peças e mão de obra</li>
+            <li>Visita mensal</li>
+            <li>Atendimento 24 horas</li>
+            <li>Empréstimo de equipamentos</li>
+            <li>Sem limite de chamados</li>
+            <li>Atendimento emergencial</li>
+          </ul>
+          <a href="contato.html" class="mt-8 w-full inline-flex justify-center bg-slate-900 text-white px-5 py-3 rounded-full font-semibold hover:bg-slate-800 transition">
+            Orçamento
+          </a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-white rounded-[32px] p-8 border border-slate-200 shadow-[0_15px_40px_rgba(15,23,42,0.06)] hover:-translate-y-1 transition">
+          <div class="w-16 h-16 rounded-2xl bg-sky-50 flex items-center justify-center mx-auto">
+            <i class="fa-solid fa-wrench text-3xl text-[#587C99]"></i>
+          </div>
+          <h3 class="mt-6 text-center text-xl font-bold text-slate-900">Contrato de Manutenção Especial</h3>
+          <ul class="mt-6 space-y-3 text-sm text-slate-600 text-center">
+            <li>Mão de obra</li>
+            <li>Visita mensal</li>
+            <li>Atendimento 24 horas</li>
+            <li>Empréstimo de equipamentos</li>
+            <li>Sem limite de chamados</li>
+            <li>Atendimento emergencial</li>
+          </ul>
+          <a href="contato.html" class="mt-8 w-full inline-flex justify-center bg-slate-900 text-white px-5 py-3 rounded-full font-semibold hover:bg-slate-800 transition">
+            Orçamento
+          </a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-white rounded-[32px] p-8 border border-slate-200 shadow-[0_15px_40px_rgba(15,23,42,0.06)] hover:-translate-y-1 transition">
+          <div class="w-16 h-16 rounded-2xl bg-sky-50 flex items-center justify-center mx-auto">
+            <i class="fa-solid fa-user-shield text-3xl text-[#587C99]"></i>
+          </div>
+          <h3 class="mt-6 text-center text-xl font-bold text-slate-900">Contrato de Manutenção Preventiva</h3>
+          <ul class="mt-6 space-y-3 text-sm text-slate-600 text-center">
+            <li>Visita mensal</li>
+            <li>Atendimento 24 horas</li>
+            <li>Empréstimo de equipamentos</li>
+            <li>Sem limite de chamados</li>
+            <li>Atendimento emergencial</li>
+            <li>Plano preventivo contínuo</li>
+          </ul>
+          <a href="contato.html" class="mt-8 w-full inline-flex justify-center bg-slate-900 text-white px-5 py-3 rounded-full font-semibold hover:bg-slate-800 transition">
+            Orçamento
+          </a>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="bg-white rounded-[32px] p-8 border border-slate-200 shadow-[0_15px_40px_rgba(15,23,42,0.06)] hover:-translate-y-1 transition">
+          <div class="w-16 h-16 rounded-2xl bg-sky-50 flex items-center justify-center mx-auto">
+            <i class="fa-solid fa-house-circle-check text-3xl text-[#587C99]"></i>
+          </div>
+          <h3 class="mt-6 text-center text-xl font-bold text-slate-900">Assistência Técnica Avulsa</h3>
+          <ul class="mt-6 space-y-3 text-sm text-slate-600 text-center">
+            <li>Atendimento em horário comercial</li>
+            <li>Equipamentos por locação</li>
+            <li>Suporte técnico pontual</li>
+            <li>Taxa por atendimento</li>
+            <li>Atendimento conforme demanda</li>
+            <li>Ideal para demandas isoladas</li>
+          </ul>
+          <a href="contato.html" class="mt-8 w-full inline-flex justify-center bg-slate-900 text-white px-5 py-3 rounded-full font-semibold hover:bg-slate-800 transition">
+            Orçamento
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 - SERVIÇOS -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex items-center gap-3 mb-12">
+        <h2 class="text-3xl md:text-5xl font-extrabold italic text-slate-900">
+          Conheça nossos serviços
+        </h2>
+        <div class="w-10 h-10 rounded-full border-2 border-sky-400 flex items-center justify-center text-sky-500">
+          <i class="fa-solid fa-droplet"></i>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+        <div class="bg-[#f8fafc] border border-slate-200 rounded-[28px] p-8 text-center shadow-sm hover:shadow-lg transition">
+          <i class="fa-solid fa-faucet-drip text-5xl text-sky-500"></i>
+          <h3 class="mt-6 text-xl font-bold text-slate-900">Assistência Técnica</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Atendimento técnico credenciado para bombas e equipamentos de grandes fabricantes, com diagnóstico preciso e reparo especializado.
+          </p>
+          <a href="assistTecnica.html" class="mt-6 inline-flex bg-slate-900 text-white px-6 py-3 rounded-full font-semibold">Saiba mais</a>
+        </div>
+
+        <div class="bg-[#f8fafc] border border-slate-200 rounded-[28px] p-8 text-center shadow-sm hover:shadow-lg transition">
+          <i class="fa-regular fa-lightbulb text-5xl text-sky-500"></i>
+          <h3 class="mt-6 text-xl font-bold text-slate-900">Instalações Elétricas</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Procedimentos técnicos em instalações elétricas, modernização de componentes e adequação conforme normas vigentes.
+          </p>
+          <a href="instEletrica.html" class="mt-6 inline-flex bg-slate-900 text-white px-6 py-3 rounded-full font-semibold">Saiba mais</a>
+        </div>
+
+        <div class="bg-[#f8fafc] border border-slate-200 rounded-[28px] p-8 text-center shadow-sm hover:shadow-lg transition">
+          <i class="fa-solid fa-gauge-high text-5xl text-sky-500"></i>
+          <h3 class="mt-6 text-xl font-bold text-slate-900">Instalações Hidráulicas</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Modernização de componentes hidráulicos, revisão de instalações e manutenção especializada para melhor desempenho.
+          </p>
+          <a href="instHidr.html" class="mt-6 inline-flex bg-slate-900 text-white px-6 py-3 rounded-full font-semibold">Saiba mais</a>
+        </div>
+
+        <div class="bg-[#f8fafc] border border-slate-200 rounded-[28px] p-8 text-center shadow-sm hover:shadow-lg transition">
+          <i class="fa-solid fa-shield-water text-5xl text-sky-500"></i>
+          <h3 class="mt-6 text-xl font-bold text-slate-900">Modernização de Instalações</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Atualização de equipamentos e sistemas para melhorar eficiência, segurança operacional e durabilidade do conjunto.
+          </p>
+          <a href="modernInst.html" class="mt-6 inline-flex bg-slate-900 text-white px-6 py-3 rounded-full font-semibold">Saiba mais</a>
+        </div>
+
+        <div class="bg-[#f8fafc] border border-slate-200 rounded-[28px] p-8 text-center shadow-sm hover:shadow-lg transition">
+          <i class="fa-solid fa-person-swimming text-5xl text-sky-500"></i>
+          <h3 class="mt-6 text-xl font-bold text-slate-900">Sistemas de Piscinas</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Revitalização da casa de bombas, modernização de instalações e manutenção de sistemas para piscinas residenciais e condominiais.
+          </p>
+          <a href="sistPiscina.html" class="mt-6 inline-flex bg-slate-900 text-white px-6 py-3 rounded-full font-semibold">Saiba mais</a>
+        </div>
+
+        <div class="bg-[#f8fafc] border border-slate-200 rounded-[28px] p-8 text-center shadow-sm hover:shadow-lg transition">
+          <i class="fa-solid fa-house text-5xl text-sky-500"></i>
+          <h3 class="mt-6 text-xl font-bold text-slate-900">Projetos</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Desenvolvimento de projetos elétricos e hidráulicos com acompanhamento técnico em todas as etapas para diferentes tipos de instalações.
+          </p>
+          <a href="projetos.html" class="mt-6 inline-flex bg-slate-900 text-white px-6 py-3 rounded-full font-semibold">Saiba mais</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 - FAIXA ESCURA -->
+  <section class="py-16 bg-[#051a2c]">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold italic text-white">
+        Conserto, garantia e modelos
+      </h2>
+      <p class="mt-5 text-white/80 text-base md:text-lg leading-relaxed max-w-5xl mx-auto">
+        Para oferecer o melhor serviço de manutenção, a Conservadora Paulista atua como assistência técnica autorizada de grandes fabricantes, atendendo durante e após a garantia de fábrica, com peças de reposição e técnicos especializados.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20 bg-[#f7f7f7] overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Título -->
+    <div class="flex items-center gap-3 mb-10">
+      <h2 class="text-3xl md:text-5xl font-extrabold italic text-[#001d36]">
+        NOSSAS AVALIAÇÕES
+      </h2>
+      <div class="relative w-10 h-10">
+        <div class="absolute inset-0 border-2 border-blue-500 rounded-full rounded-t-[60%] rounded-b-[40%] rotate-45"></div>
+        <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-[#dffaf0] rounded-full flex items-center justify-center border border-teal-400">
+          <span class="text-teal-500 text-xs">✓</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wrapper -->
+    <div class="relative">
+      <div id="reviewsCarousel" class="flex gap-4 transition-transform duration-500 ease-in-out">
+
+        <!-- Card 1 -->
+        <div class="min-w-[320px] md:min-w-[340px] bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <img src="Feedbacks/feed2.webp" alt="" class="w-12 h-12 rounded-full object-cover">
+              <div>
+                <h3 class="font-bold text-slate-900">Fábio Esteves</h3>
+                <p class="text-sm text-gray-500">17/10/2023</p>
+              </div>
+            </div>
+            <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png" alt="Google" class="w-6 h-6">
+          </div>
+
+          <div class="flex text-yellow-400 text-xl mt-4">★★★★★</div>
+
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            Empresa séria com atendimento impecável, e com serviços de muita qualidade. Obrigado pelos atendimentos.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="min-w-[320px] md:min-w-[340px] bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <img src="Feedbacks/feed1.webp" alt="" class="w-12 h-12 rounded-full object-cover">
+              <div>
+                <h3 class="font-bold text-slate-900">Lucas Soares</h3>
+                <p class="text-sm text-gray-500">13/06/2023</p>
+              </div>
+            </div>
+            <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png" alt="Google" class="w-6 h-6">
+          </div>
+
+          <div class="flex text-yellow-400 text-xl mt-4">★★★★★</div>
+
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            Muito bom excelente, recomendo muito!
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="min-w-[320px] md:min-w-[340px] bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-[#F4511E] text-white flex items-center justify-center font-bold text-lg">
+                P
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900">Paula Carneiro</h3>
+                <p class="text-sm text-gray-500">09/06/2023</p>
+              </div>
+            </div>
+            <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png" alt="Google" class="w-6 h-6">
+          </div>
+
+          <div class="flex text-yellow-400 text-xl mt-4">★★★★★</div>
+
+          <div class="mt-4">
+            <span class="review-text line-clamp-4 text-slate-700 leading-relaxed block">
+              Atendimento impecável desde o responsável pela parte técnica (Sidney) como pelo técnico (Rafael). Tive um problema no meu pressurizador de água e fui atendida com muita rapidez, atenção e profissionalismo.
+            </span>
+            <button onclick="toggleText(this)" class="text-gray-400 text-sm mt-2 block hover:text-gray-600">
+              Consulte Mais informação
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="min-w-[320px] md:min-w-[340px] bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-lg">
+                E
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900">ESFWC ESFWC</h3>
+                <p class="text-sm text-gray-500">22/05/2023</p>
+              </div>
+            </div>
+            <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png" alt="Google" class="w-6 h-6">
+          </div>
+
+          <div class="flex text-yellow-400 text-xl mt-4">★★★★★</div>
+
+          <div class="mt-4">
+            <span class="review-text line-clamp-4 text-slate-700 leading-relaxed block">
+              Quero deixar aqui registrado a minha satisfação com a empresa Conservadora Paulista de bombas! A primeira experiência foi no condomínio Villágio Mooca que tive uma indicação do gerente Vagner, Residencial Di Maranello. A segunda experiência aqui no Edifício San Francisco Work Center, parceria de sucesso, sempre que precisei de atendimento, não mediram esforços para me atender o mais breve possível e resolver o problema. A terceira experiência positiva está sendo no Edifício Beverly Hills. Att Antonio Jr.
+            </span>
+            <button onclick="toggleText(this)" class="text-gray-400 text-sm mt-2 block hover:text-gray-600">
+              Consulte Mais informação
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="min-w-[320px] md:min-w-[340px] bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-[#455A64] text-white flex items-center justify-center font-bold text-lg">
+                M
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900">Marcos Cavanilla</h3>
+                <p class="text-sm text-gray-500">08/02/2023</p>
+              </div>
+            </div>
+            <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png" alt="Google" class="w-6 h-6">
+          </div>
+
+          <div class="flex text-yellow-400 text-xl mt-4">★★★★★</div>
+
+          <div class="mt-4">
+            <span class="review-text line-clamp-4 text-slate-700 leading-relaxed block">
+              A partir do momento em que a Conservadora Paulista de Bombas passou a ser um fornecedor do nosso Condomínio, tanto para serviços de reparação como para venda de novos equipamentos, todas as nossas dificuldades relativas a bombas desapareceram. Concluindo: excelente fornecedor.
+            </span>
+            <button onclick="toggleText(this)" class="text-gray-400 text-sm mt-2 block hover:text-gray-600">
+              Consulte Mais informação
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="min-w-[320px] md:min-w-[340px] bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <img src="Feedbacks/feed5.webp" alt="" class="w-12 h-12 rounded-full object-cover">
+              <div>
+                <h3 class="font-bold text-slate-900">Regiane Musa</h3>
+                <p class="text-sm text-gray-500">30/01/2023</p>
+              </div>
+            </div>
+            <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png" alt="Google" class="w-6 h-6">
+          </div>
+
+          <div class="flex text-yellow-400 text-xl mt-4">★★★★★</div>
+
+          <div class="mt-4">
+            <span class="review-text line-clamp-4 text-slate-700 leading-relaxed block">
+              Contratei a empresa para a instalação do ralo anti-prisionamento e do botão de emergência em minha piscina. Foi tudo perfeito e dentro das normas de segurança, os funcionários são prestativos e educados, me explicaram em detalhes o funcionamento. Eu INDICO!
+            </span>
+            <button onclick="toggleText(this)" class="text-gray-400 text-sm mt-2 block hover:text-gray-600">
+              Consulte Mais informação
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botões -->
+      <button onclick="moveReviews(-1)" class="absolute -left-3 md:-left-6 top-1/2 -translate-y-1/2 bg-white shadow-md w-12 h-12 rounded-full flex items-center justify-center text-slate-500 hover:text-slate-800 transition z-10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+      </button>
+
+      <button onclick="moveReviews(1)" class="absolute -right-3 md:-right-6 top-1/2 -translate-y-1/2 bg-white shadow-md w-12 h-12 rounded-full flex items-center justify-center text-slate-500 hover:text-slate-800 transition z-10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+<footer class="bg-[#071c2c] text-white pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- TOPO -->
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+
+      <!-- CONTATOS -->
+      <div>
+        <h3 class="text-lg font-extrabold uppercase tracking-wide mb-5">Contatos</h3>
+
+        <div class="space-y-3 text-white/80 text-sm leading-relaxed">
+          <p>conservadorapaulista@conservadorapaulista.com.br</p>
+          <p>(11) 2692-2355</p>
+          <p>(11) 2682-2855</p>
+          <p>(11) 99426-5047 | (11) 99436-5750</p>
+          <p>
+            Rua Guaratinguetá, 176 - Mooca<br>
+            CEP: 03112-080 São Paulo - SP
+          </p>
+        </div>
+
+        <div class="mt-10 flex items-center gap-3">
+  <div class="w-10 h-10 bg-orange-500/20 rounded-full flex items-center justify-center">
+    <i class="fa-solid fa-code text-orange-400"></i>
+  </div>
+
+  <div>
+    <p class="text-xs text-white/50">Website by</p>
+    <a href="https://www.instagram.com/augustowebp/" class="text-white font-semibold hover:text-orange-400 transition underline">
+      Augusto Web
+    </a>
+  </div>
+</div>
+      </div>
+
+      <!-- INSTITUCIONAL -->
+      <div>
+        <h3 class="text-lg font-extrabold uppercase tracking-wide mb-5">Institucional</h3>
+        <ul class="space-y-3 text-white/80 text-sm">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="contratomanutencao.html" class="hover:text-white transition">Contrato de Manutenção</a></li>
+          <li><a href="contato.html" class="hover:text-white transition">Contato</a></li>
+          <li><a href="Sobre.html" class="hover:text-white transition">Empresa</a></li>
+          <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+          <li><a href="https://www.lojabombaspaulista.com.br" class="hover:text-white transition">Loja Virtual</a></li>
+        </ul>
+      </div>
+
+      
+
+      <!-- REDES -->
+      <div>
+        <h3 class="text-lg font-extrabold uppercase tracking-wide mb-5">Rede Social</h3>
+
+        <div class="flex gap-3">
+          <a href="#" class="w-12 h-12 rounded-full bg-white/10 hover:bg-orange-500 transition flex items-center justify-center">
+            <i class="fa-brands fa-facebook-f text-white"></i>
+          </a>
+          <a href="#" class="w-12 h-12 rounded-full bg-white/10 hover:bg-orange-500 transition flex items-center justify-center">
+            <i class="fa-brands fa-instagram text-white"></i>
+          </a>
+        </div>
+
+        <div class="mt-8 bg-white/5 rounded-2xl p-5 border border-white/10">
+          <p class="text-sm text-white/70 leading-relaxed">
+            Atendimento especializado em bombas hidráulicas, manutenção preventiva e corretiva, suporte técnico e fornecimento de equipamentos para condomínios, residências e empresas.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BASE -->
+    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-white/50 text-center md:text-left">
+        © 2026 Conservadora Paulista. Todos os direitos reservados.
+      </p>
+
+      <div class="flex items-center gap-6 text-sm text-white/50">
+        <a href="#" class="hover:text-white transition">Política de Privacidade</a>
+        <a href="#" class="hover:text-white transition">Termos de Uso</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</main>
+
+
+
+
+
+
+
+
+<style>
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+<script>
+  let reviewIndex = 0;
+
+  function moveReviews(direction) {
+    const carousel = document.getElementById("reviewsCarousel");
+    const cards = carousel.children;
+    const cardWidth = cards[0].offsetWidth + 16;
+    const visibleCards = window.innerWidth >= 768 ? 3 : 1;
+    const maxIndex = cards.length - visibleCards;
+
+    reviewIndex += direction;
+
+    if (reviewIndex < 0) reviewIndex = 0;
+    if (reviewIndex > maxIndex) reviewIndex = maxIndex;
+
+    carousel.style.transform = `translateX(-${reviewIndex * cardWidth}px)`;
+  }
+
+  function toggleText(button) {
+    const text = button.previousElementSibling;
+
+    if (text.classList.contains("line-clamp-4")) {
+      text.classList.remove("line-clamp-4");
+      button.innerText = "Esconder";
+    } else {
+      text.classList.add("line-clamp-4");
+      button.innerText = "Consulte Mais informação";
+    }
+  }
+</script>
+</body>
+</html>

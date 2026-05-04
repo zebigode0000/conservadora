@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bombas de Recirculação</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body{
+      font-family:'Manrope',sans-serif;
+      background:#f3f4f6;
+      color:#1f2937;
+    }
+  </style>
+</head>
+<body>
+<header class="absolute top-0 left-0 w-full z-50">
+  <nav class="bg-transparent">
+    <div class="max-w-7xl px-4 sm:px-6 bg-gray-200/60 backdrop-blur-sm rounded-full m-auto my-3 shadow-lg">
+      <div class="h-20 flex items-center justify-between ">
+
+        <a href="../index.html" class="shrink-0">
+          <img src="../imagens/logo.webp" alt="Conservadora Paulista" class="h-12 md:h-14 w-auto object-contain">
+        </a>
+
+        <div class="hidden md:flex items-center gap-4">
+          <ul class="flex items-center gap-2 text-sm font-medium text-slate-800">
+            <li><a href="../index.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Home</a></li>
+            <li><a href="../contratomanutencao.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Contrato de Manutenção</a></li>
+
+            <li class="relative group">
+              <a href="#" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full flex items-center gap-1 transition">
+                Produtos <span class="text-[10px]">▼</span>
+              </a>
+              <ul class="absolute top-full left-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover:block z-30">
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Bombas d'água <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-72 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="../Produtos/incendio.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Bombas Combate a Incêndio</a></li>
+                    <li><a href="../Produtos/monoestagio.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Monoestágio</a></li>
+                    <li><a href="../Produtos/multiestagio.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Multiestágio</a></li>
+                    <li><a href="../Produtos/hidromassage.html" class="block px-4 py-3 hover:bg-slate-50">Bombas para Hidromassagem</a></li>
+                    <li><a href="../Produtos/submersas.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Submersas</a></li>
+                    <li><a href="../Produtos/submersiveis.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Submersíveis</a></li>
+                    <li><a href="../Produtos/Pressurizacao.html" class="block px-4 py-3 hover:bg-slate-50">Bombas de Pressurização</a></li>
+                    <li><a href="../Produtos/recirculacao.html" class="block px-4 py-3 hover:bg-slate-50">Bombas de Recirculação</a></li>
+                    <li><a href="../Produtos/esgoto.html" class="block px-4 py-3 hover:bg-slate-50">Bombas para Esgoto</a></li>
+                    <li><a href="../Produtos/piscina.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Bombas para Piscinas</a></li>
+                  </ul>
+                </li>
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50">Válvulas <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-72 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="../Produtos/valvularedutora.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Válvula Redutora de Pressão</a></li>
+                    <li><a href="../Produtos/valvula-controladora-bomba.html" class="block px-4 py-3 hover:bg-slate-50">Válvula Controladora de Bomba</a></li>
+                    <li><a href="../Produtos/valvula-controladora-nivel.html" class="block px-4 py-3 hover:bg-slate-50">Válvula Controladora de Nível</a></li>
+                    <li><a href="../Produtos/valvula-alivio-pressao.html" class="block px-4 py-3 hover:bg-slate-50">Válvula de Alívio Rápido de Pressão</a></li>
+                    <li><a href="../Produtos/valvula-antecipadora-onda.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Válvula Antecipadora de Onda</a></li>
+                  </ul>
+                </li>
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Acessórios e Peças <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-64 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="../Produtos/conexao-hidraulica.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Conexões Hidráulicas</a></li>
+                    <li><a href="../Produtos/filtro-piscina.html" class="block px-4 py-3 hover:bg-slate-50">Filtro para Piscinas</a></li>
+                    <li><a href="../Produtos/pecas-bombas.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Peças para Bombas</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full flex items-center gap-1 transition">
+                Serviços <span class="text-[10px]">▼</span>
+              </a>
+              <ul class="absolute top-full left-0 w-56 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover:block z-30">
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Assistência Técnica <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-56 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="../autorizadas.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Autorizada</a></li>
+                    <li><a href="#" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Mais Fabricantes</a></li>
+                  </ul>
+                </li>
+                <li><a href="../instEletrica.html" class="block px-4 py-3 hover:bg-slate-50">Instalações Elétricas</a></li>
+                <li><a href="../instHidr.html" class="block px-4 py-3 hover:bg-slate-50">Instalações Hidráulicas</a></li>
+                <li><a href="../modernInst.html" class="block px-4 py-3 hover:bg-slate-50">Modernização de Instalações</a></li>
+                <li><a href="../sistPiscina.html" class="block px-4 py-3 hover:bg-slate-50">Sistemas de Piscinas</a></li>
+                <li><a href="../projetos.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Projetos</a></li>
+              </ul>
+            </li>
+
+            <li><a href="../contato.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Contato</a></li>
+            <li><a href="../Sobre.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Empresa</a></li>
+            <li><a href="../blog.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Blog</a></li>
+          </ul>
+
+          <a href="https://www.lojabombaspaulista.com.br" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition">
+            Loja Virtual
+          </a>
+        </div>
+
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-slate-200 bg-white/90 text-slate-800">
+          <svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden hidden mt-2 mx-4 rounded-2xl border border-slate-200 bg-white shadow-xl max-h-[80vh] overflow-y-auto">
+      <div class="px-4 py-4 space-y-2">
+        <a href="../index.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Home</a>
+        <a href="../contratomanutencao.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Contrato de Manutenção</a>
+
+        <details class="group rounded-xl border border-slate-200 bg-slate-50">
+          <summary class="list-none px-4 py-3 flex items-center justify-between cursor-pointer text-slate-800">
+            <span>Produtos</span>
+            <span class="transition group-open:rotate-180">⌄</span>
+          </summary>
+          <div class="px-4 pb-3 space-y-2 text-sm text-slate-700">
+            
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Bombas d'água <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="../Produtos/incendio.html" class="block py-2">Bombas Combate a Incêndio</a>
+                <a href="../Produtos/monoestagio.html" class="block py-2">Bombas Monoestágio</a>
+                <a href="../Produtos/multiestagio.html" class="block py-2">Bombas Multiestágio</a>
+                <a href="../Produtos/hidromassage.html" class="block py-2">Bombas para Hidromassagem</a>
+                <a href="../Produtos/submersas.html" class="block py-2">Bombas Submersas</a>
+                <a href="../Produtos/submersiveis.html" class="block py-2">Bombas Submersíveis</a>
+                <a href="../Produtos/Pressurizacao.html" class="block py-2">Bombas de Pressurização</a>
+                <a href="../Produtos/recirculacao.html" class="block py-2">Bombas de Recirculação</a>
+                <a href="../Produtos/esgoto.html" class="block py-2">Bombas para Esgoto</a>
+                <a href="../Produtos/piscina.html" class="block py-2">Bombas para Piscinas</a>
+              </div>
+            </details>
+
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Válvulas <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="../Produtos/valvularedutora.html" class="block py-2">Válvula Redutora de Pressão</a>
+                <a href="../Produtos/valvula-controladora-bomba.html" class="block py-2">Válvula Controladora de Bomba</a>
+                <a href="../Produtos/valvula-controladora-nivel.html" class="block py-2">Válvula Controladora de Nível</a>
+                <a href="../Produtos/valvula-alivio-pressao.html" class="block py-2">Válvula de Alívio Rápido de Pressão</a>
+                <a href="../Produtos/valvula-antecipadora-onda.html" class="block py-2">Válvula Antecipadora de Onda</a>
+              </div>
+            </details>
+
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Acessórios e Peças <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="../Produtos/conexao-hidraulica.html" class="block py-2">Conexões Hidráulicas</a>
+                <a href="../Produtos/filtro-piscina.html" class="block py-2">Filtro para Piscinas</a>
+                <a href="../Produtos/pecas-bombas.html" class="block py-2">Peças para Bombas</a>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-slate-200 bg-slate-50">
+          <summary class="list-none px-4 py-3 flex items-center justify-between cursor-pointer text-slate-800">
+            <span>Serviços</span>
+            <span class="transition group-open:rotate-180">⌄</span>
+          </summary>
+          <div class="px-4 pb-3 space-y-2 text-sm text-slate-700">
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Assistência Técnica <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="../autorizadas.html" class="block py-2">Autorizada</a>
+                <a href="#" class="block py-2">Mais Fabricantes</a>
+              </div>
+            </details>
+            <a href="../instEletrica.html" class="block py-2">Instalações Elétricas</a>
+            <a href="../instHidr.html" class="block py-2">Instalações Hidráulicas</a>
+            <a href="../modernInst.html" class="block py-2">Modernização de Instalações</a>
+            <a href="../sistPiscina.html" class="block py-2">Sistemas de Piscinas</a>
+            <a href="../projetos.html" class="block py-2">Projetos</a>
+          </div>
+        </details>
+
+        <a href="../contato.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Contato</a>
+        <a href="../Sobre.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Empresa</a>
+        <a href="../blog.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Blog</a>
+
+        <a href="https://www.lojabombaspaulista.com.br" class="block text-center bg-orange-500 text-white px-4 py-3 rounded-xl font-semibold hover:bg-orange-600 transition mt-3">
+          Loja Virtual
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+  <main class="py-12 md:py-16 mt-10">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+
+      <!-- TOPO -->
+      <section>
+        <div class="flex items-center gap-3">
+          <h1 class="text-4xl md:text-5xl font-extrabold italic uppercase tracking-tight text-[#0E1735]">
+            Bombas de Recirculação
+          </h1>
+
+          <div class="flex items-center gap-2">
+            <svg class="h-10 w-10 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C9 6 5 9.5 5 14a7 7 0 1014 0c0-4.5-4-8-7-12z"/>
+            </svg>
+            <svg class="h-6 w-6 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </div>
+        </div>
+
+        <p class="mt-6 max-w-6xl text-[17px] leading-8 text-slate-700">
+          A Conservadora Paulista oferece soluções em bombas de recirculação ideais para sistemas que
+          necessitam manter o fluxo contínuo de líquidos, garantindo eficiência, economia de energia e
+          melhor desempenho em aplicações residenciais, comerciais e industriais.
+        </p>
+      </section>
+
+      <!-- GRID PRODUTOS -->
+      <section class="mt-12">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+          <!-- CARD 1 -->
+          <article class="rounded-[34px] bg-[#dddddf] p-6 shadow-sm min-h-[430px] flex flex-col">
+            <div class="h-56 flex items-center justify-center">
+              <img src="../img_produtos/recirculacao29.webp" alt="Motobomba Circuladora Solaris Schneider" class="max-h-44 object-contain">
+            </div>
+
+            <h2 class="mt-4 text-xl font-extrabold italic text-center text-[#0E1735]">
+              Motobomba Circuladora Solaris Schneider
+            </h2>
+
+            <p class="mt-4 text-sm leading-7 text-slate-700 text-center">
+              Equipamento desenvolvido para recirculação de líquidos em sistemas hidráulicos, especialmente
+              em aplicações que exigem fluxo contínuo, como sistemas de aquecimento e circulação de água quente.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- BLOCO EXPLICATIVO -->
+      <section class="mt-16 rounded-[36px] bg-[#001D36] px-6 py-12 md:px-10 md:py-14 text-center text-white">
+        <h2 class="text-3xl md:text-5xl font-extrabold italic uppercase leading-tight">
+          Para que servem as bombas de recirculação
+        </h2>
+
+        <div class="mt-8 max-w-6xl mx-auto space-y-7 text-[15px] md:text-[17px] leading-8 text-slate-200">
+          <p>
+            Por conta de suas especificidades, as bombas de recirculação podem ser usadas para diversas
+            aplicações, especialmente em edifícios, garantindo que o líquido circule continuamente dentro
+            do sistema hidráulico.
+          </p>
+
+          <p>
+            Para o funcionamento correto do equipamento, é importante que o líquido passe por dentro dele
+            antes, mantendo o fluxo constante e evitando falhas no sistema.
+          </p>
+
+          <p>
+            Além disso, é fundamental que a instalação esteja em um desnível adequado, normalmente até
+            50 cm abaixo do painel, garantindo eficiência, segurança e melhor desempenho do equipamento.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>

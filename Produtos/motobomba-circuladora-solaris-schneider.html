@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motobomba Circuladora Solaris Schneider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+    }
+  </style>
+</head>
+<body>
+<header class="absolute top-0 left-0 w-full z-50">
+  <nav class="bg-transparent">
+    <div class="max-w-7xl px-4 sm:px-6 bg-gray-200/60 backdrop-blur-sm rounded-full m-auto my-3 shadow-lg">
+      <div class="h-20 flex items-center justify-between ">
+
+        <a href="../index.html" class="shrink-0">
+          <img src="../imagens/logo.webp" alt="Conservadora Paulista" class="h-12 md:h-14 w-auto object-contain">
+        </a>
+
+        <div class="hidden md:flex items-center gap-4">
+          <ul class="flex items-center gap-2 text-sm font-medium text-slate-800">
+            <li><a href="../index.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Home</a></li>
+            <li><a href="../contratomanutencao.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Contrato de Manutenção</a></li>
+
+            <li class="relative group">
+              <a href="#" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full flex items-center gap-1 transition">
+                Produtos <span class="text-[10px]">▼</span>
+              </a>
+              <ul class="absolute top-full left-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover:block z-30">
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Bombas d'água <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-72 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="../Produtos/incendio.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Bombas Combate a Incêndio</a></li>
+                    <li><a href="../Produtos/monoestagio.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Monoestágio</a></li>
+                    <li><a href="../Produtos/multiestagio.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Multiestágio</a></li>
+                    <li><a href="../Produtos/hidromassage.html" class="block px-4 py-3 hover:bg-slate-50">Bombas para Hidromassagem</a></li>
+                    <li><a href="../Produtos/submersas.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Submersas</a></li>
+                    <li><a href="../Produtos/submersiveis.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Submersíveis</a></li>
+                    <li><a href="../Produtos/Pressurizacao.html" class="block px-4 py-3 hover:bg-slate-50">Bombas de Pressurização</a></li>
+                    <li><a href="../Produtos/recirculacao.html" class="block px-4 py-3 hover:bg-slate-50">Bombas de Recirculação</a></li>
+                    <li><a href="../Produtos/esgoto.html" class="block px-4 py-3 hover:bg-slate-50">Bombas para Esgoto</a></li>
+                    <li><a href="../Produtos/piscina.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Bombas para Piscinas</a></li>
+                  </ul>
+                </li>
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50">Válvulas <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-72 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="../Produtos/valvularedutora.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Válvula Redutora de Pressão</a></li>
+                    <li><a href="../Produtos/valvula-controladora-bomba.html" class="block px-4 py-3 hover:bg-slate-50">Válvula Controladora de Bomba</a></li>
+                    <li><a href="../Produtos/valvula-controladora-nivel.html" class="block px-4 py-3 hover:bg-slate-50">Válvula Controladora de Nível</a></li>
+                    <li><a href="../Produtos/valvula-alivio-pressao.html" class="block px-4 py-3 hover:bg-slate-50">Válvula de Alívio Rápido de Pressão</a></li>
+                    <li><a href="../Produtos/valvula-antecipadora-onda.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Válvula Antecipadora de Onda</a></li>
+                  </ul>
+                </li>
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Acessórios e Peças <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-64 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="../Produtos/conexao-hidraulica.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Conexões Hidráulicas</a></li>
+                    <li><a href="../Produtos/filtro-piscina.html" class="block px-4 py-3 hover:bg-slate-50">Filtro para Piscinas</a></li>
+                    <li><a href="../Produtos/pecas-bombas.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Peças para Bombas</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full flex items-center gap-1 transition">
+                Serviços <span class="text-[10px]">▼</span>
+              </a>
+              <ul class="absolute top-full left-0 w-56 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover:block z-30">
+                <li class="relative group/sub">
+                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Assistência Técnica <span>→</span></a>
+                  <ul class="absolute top-0 left-full w-56 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
+                    <li><a href="../autorizadas.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Autorizada</a></li>
+                    <li><a href="#" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Mais Fabricantes</a></li>
+                  </ul>
+                </li>
+                <li><a href="../instEletrica.html" class="block px-4 py-3 hover:bg-slate-50">Instalações Elétricas</a></li>
+                <li><a href="../instHidr.html" class="block px-4 py-3 hover:bg-slate-50">Instalações Hidráulicas</a></li>
+                <li><a href="../modernInst.html" class="block px-4 py-3 hover:bg-slate-50">Modernização de Instalações</a></li>
+                <li><a href="../sistPiscina.html" class="block px-4 py-3 hover:bg-slate-50">Sistemas de Piscinas</a></li>
+                <li><a href="../projetos.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Projetos</a></li>
+              </ul>
+            </li>
+
+            <li><a href="../contato.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Contato</a></li>
+            <li><a href="../Sobre.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Empresa</a></li>
+            <li><a href="../blog.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Blog</a></li>
+          </ul>
+
+          <a href="https://www.lojabombaspaulista.com.br" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition">
+            Loja Virtual
+          </a>
+        </div>
+
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-slate-200 bg-white/90 text-slate-800">
+          <svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden hidden mt-2 mx-4 rounded-2xl border border-slate-200 bg-white shadow-xl max-h-[80vh] overflow-y-auto">
+      <div class="px-4 py-4 space-y-2">
+        <a href="../index.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Home</a>
+        <a href="../contratomanutencao.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Contrato de Manutenção</a>
+
+        <details class="group rounded-xl border border-slate-200 bg-slate-50">
+          <summary class="list-none px-4 py-3 flex items-center justify-between cursor-pointer text-slate-800">
+            <span>Produtos</span>
+            <span class="transition group-open:rotate-180">⌄</span>
+          </summary>
+          <div class="px-4 pb-3 space-y-2 text-sm text-slate-700">
+            
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Bombas d'água <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="../Produtos/incendio.html" class="block py-2">Bombas Combate a Incêndio</a>
+                <a href="../Produtos/monoestagio.html" class="block py-2">Bombas Monoestágio</a>
+                <a href="../Produtos/multiestagio.html" class="block py-2">Bombas Multiestágio</a>
+                <a href="../Produtos/hidromassage.html" class="block py-2">Bombas para Hidromassagem</a>
+                <a href="../Produtos/submersas.html" class="block py-2">Bombas Submersas</a>
+                <a href="../Produtos/submersiveis.html" class="block py-2">Bombas Submersíveis</a>
+                <a href="../Produtos/Pressurizacao.html" class="block py-2">Bombas de Pressurização</a>
+                <a href="../Produtos/recirculacao.html" class="block py-2">Bombas de Recirculação</a>
+                <a href="../Produtos/esgoto.html" class="block py-2">Bombas para Esgoto</a>
+                <a href="../Produtos/piscina.html" class="block py-2">Bombas para Piscinas</a>
+              </div>
+            </details>
+
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Válvulas <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="../Produtos/valvularedutora.html" class="block py-2">Válvula Redutora de Pressão</a>
+                <a href="../Produtos/valvula-controladora-bomba.html" class="block py-2">Válvula Controladora de Bomba</a>
+                <a href="../Produtos/valvula-controladora-nivel.html" class="block py-2">Válvula Controladora de Nível</a>
+                <a href="../Produtos/valvula-alivio-pressao.html" class="block py-2">Válvula de Alívio Rápido de Pressão</a>
+                <a href="../Produtos/valvula-antecipadora-onda.html" class="block py-2">Válvula Antecipadora de Onda</a>
+              </div>
+            </details>
+
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Acessórios e Peças <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="../Produtos/conexao-hidraulica.html" class="block py-2">Conexões Hidráulicas</a>
+                <a href="../Produtos/filtro-piscina.html" class="block py-2">Filtro para Piscinas</a>
+                <a href="../Produtos/pecas-bombas.html" class="block py-2">Peças para Bombas</a>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-slate-200 bg-slate-50">
+          <summary class="list-none px-4 py-3 flex items-center justify-between cursor-pointer text-slate-800">
+            <span>Serviços</span>
+            <span class="transition group-open:rotate-180">⌄</span>
+          </summary>
+          <div class="px-4 pb-3 space-y-2 text-sm text-slate-700">
+            <details class="group/sub">
+              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
+                Assistência Técnica <span class="text-[10px]">▼</span>
+              </summary>
+              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
+                <a href="../autorizadas.html" class="block py-2">Autorizada</a>
+                <a href="#" class="block py-2">Mais Fabricantes</a>
+              </div>
+            </details>
+            <a href="../instEletrica.html" class="block py-2">Instalações Elétricas</a>
+            <a href="../instHidr.html" class="block py-2">Instalações Hidráulicas</a>
+            <a href="../modernInst.html" class="block py-2">Modernização de Instalações</a>
+            <a href="../sistPiscina.html" class="block py-2">Sistemas de Piscinas</a>
+            <a href="../projetos.html" class="block py-2">Projetos</a>
+          </div>
+        </details>
+
+        <a href="../contato.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Contato</a>
+        <a href="../Sobre.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Empresa</a>
+        <a href="../blog.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Blog</a>
+
+        <a href="https://www.lojabombaspaulista.com.br" class="block text-center bg-orange-500 text-white px-4 py-3 rounded-xl font-semibold hover:bg-orange-600 transition mt-3">
+          Loja Virtual
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+  <main class="py-12 md:py-16 mt-10">
+    <div class="max-w-7xl mx-auto px-5 md:px-8">
+
+      <!-- HERO -->
+      <section class="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 xl:gap-16 items-start">
+        
+        <!-- TEXTO -->
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-[#0E1735] shadow-sm">
+            Linha Solaris Schneider
+          </div>
+
+          <h1 class="mt-5 text-4xl md:text-5xl xl:text-6xl font-extrabold italic uppercase leading-[0.95] tracking-tight text-[#0E1735]">
+            Motobomba Circuladora Solaris Schneider
+          </h1>
+
+          <div class="mt-5 flex items-center gap-3">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <svg class="h-7 w-7 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C9 6 5 9.5 5 14a7 7 0 1014 0c0-4.5-4-8-7-12z"/>
+              </svg>
+            </div>
+
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <svg class="h-6 w-6 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </div>
+          </div>
+
+          <p class="mt-8 max-w-2xl text-[17px] leading-8 text-slate-700">
+            A Motobomba Circuladora Solaris Schneider é a escolha ideal para quem busca eficiência e
+            durabilidade em sistemas de aquecimento solar. Com corpo em bronze, essa motobomba é
+            projetada especialmente para suportar altas temperaturas, garantindo longa vida útil e
+            performance superior na circulação de água quente.
+          </p>
+
+          <div class="mt-10">
+            <h2 class="text-3xl md:text-4xl font-extrabold leading-tight text-[#1f2937]">
+              Principais Diferenciais da Motobomba Solaris Schneider
+            </h2>
+
+            <div class="mt-8 space-y-5">
+              <article class="rounded-[26px] bg-white border border-slate-200 shadow-sm p-6 md:p-7">
+                <h3 class="text-2xl font-extrabold text-[#1f2937]">
+                  Corpo em bronze: máxima resistência
+                </h3>
+                <p class="mt-3 text-[17px] leading-8 text-slate-700">
+                  A construção em bronze oferece resistência superior à corrosão e ao desgaste, tornando
+                  essa motobomba ideal para sistemas que operam com água quente de forma contínua. O
+                  material também é mais robusto e durável em comparação a versões plásticas.
+                </p>
+              </article>
+
+              <article class="rounded-[26px] bg-white border border-slate-200 shadow-sm p-6 md:p-7">
+                <h3 class="text-2xl font-extrabold text-[#1f2937]">
+                  Três opções de velocidade
+                </h3>
+                <p class="mt-3 text-[17px] leading-8 text-slate-700">
+                  Com três níveis de velocidade ajustáveis, a motobomba Solaris Schneider permite adequar a
+                  vazão de água conforme a necessidade do seu sistema, otimizando o consumo de energia e
+                  melhorando a performance térmica do aquecimento.
+                </p>
+              </article>
+
+              <article class="rounded-[26px] bg-white border border-slate-200 shadow-sm p-6 md:p-7">
+                <h3 class="text-2xl font-extrabold text-[#1f2937]">
+                  Design compacto e instalação facilitada
+                </h3>
+                <p class="mt-3 text-[17px] leading-8 text-slate-700">
+                  Seu design compacto facilita a instalação mesmo em espaços reduzidos. A estrutura é
+                  pensada para permitir uma montagem rápida e prática, com mínima necessidade de
+                  adaptações no local.
+                </p>
+              </article>
+
+              <article class="rounded-[26px] bg-white border border-slate-200 shadow-sm p-6 md:p-7">
+                <h3 class="text-2xl font-extrabold text-[#1f2937]">
+                  Alta eficiência e baixo consumo
+                </h3>
+                <p class="mt-3 text-[17px] leading-8 text-slate-700">
+                  Além de robusta, a Motobomba Circuladora Solaris Schneider é reconhecida por sua
+                  eficiência energética, contribuindo para sistemas mais sustentáveis e econômicos. É ideal
+                  para quem busca reduzir o consumo elétrico sem abrir mão de conforto e desempenho.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMAGEM / CARD -->
+        <div class="lg:sticky lg:top-8">
+          <div class="relative overflow-hidden rounded-[40px] bg-[#dddddf] min-h-[560px] p-6 md:p-10 shadow-sm">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.75),transparent_38%)]"></div>
+
+            <div class="absolute left-6 top-6 z-20 rounded-full bg-white/85 backdrop-blur px-4 py-2 text-sm font-semibold text-[#0E1735] shadow-sm">
+              Corpo em bronze
+            </div>
+
+            <div class="relative z-10 flex min-h-[500px] items-center justify-center">
+              <img
+                src="motobomba-circuladora-solaris-schneider.png"
+                alt="Motobomba Circuladora Solaris Schneider"
+                class="max-h-[390px] w-auto object-contain drop-shadow-[0_22px_35px_rgba(0,0,0,0.18)]"
+              >
+            </div>
+
+            <div class="absolute bottom-6 left-6 right-6 grid grid-cols-2 gap-4">
+              <div class="rounded-3xl bg-white/90 backdrop-blur p-4 shadow-sm">
+                <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Aplicação</p>
+                <p class="mt-1 text-sm font-bold text-[#0E1735]">Circulação de água quente</p>
+              </div>
+
+              <div class="rounded-3xl bg-white/90 backdrop-blur p-4 shadow-sm">
+                <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Diferencial</p>
+                <p class="mt-1 text-sm font-bold text-[#0E1735]">3 velocidades ajustáveis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APLICAÇÕES + FICHA -->
+      <section class="mt-16 grid lg:grid-cols-[1.05fr_0.95fr] gap-8 xl:gap-10">
+        <div class="rounded-[30px] bg-white border border-slate-200 shadow-sm p-6 md:p-8">
+          <h2 class="text-3xl md:text-4xl font-extrabold leading-tight text-[#1f2937]">
+            Aplicações da Motobomba Solaris Schneider
+          </h2>
+
+          <p class="mt-5 text-[17px] leading-8 text-slate-700">
+            A motobomba circuladora Solaris Schneider é perfeita para:
+          </p>
+
+          <ul class="mt-6 space-y-4 text-[17px] leading-8 text-slate-700">
+            <li class="flex gap-3">
+              <span class="mt-3 h-2.5 w-2.5 rounded-full bg-[#0E1735] shrink-0"></span>
+              <span>Sistemas de aquecimento solar residencial e comercial;</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-3 h-2.5 w-2.5 rounded-full bg-[#0E1735] shrink-0"></span>
+              <span>Circulação forçada de água quente;</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-3 h-2.5 w-2.5 rounded-full bg-[#0E1735] shrink-0"></span>
+              <span>Sistemas pressurizados e não pressurizados;</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-3 h-2.5 w-2.5 rounded-full bg-[#0E1735] shrink-0"></span>
+              <span>Instalações em residências, condomínios, hotéis, academias e clínicas;</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rounded-[30px] bg-[#0E1735] text-white shadow-sm p-6 md:p-8">
+          <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">
+            Ficha técnica (modelo padrão)
+          </h2>
+
+          <div class="mt-8 grid gap-4">
+            <div class="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+              <p class="text-sm text-slate-300">Material do corpo</p>
+              <p class="mt-1 text-lg font-bold">Bronze</p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+              <p class="text-sm text-slate-300">Velocidades</p>
+              <p class="mt-1 text-lg font-bold">3 níveis ajustáveis</p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+              <p class="text-sm text-slate-300">Tensão</p>
+              <p class="mt-1 text-lg font-bold">127V ou 220V</p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+              <p class="text-sm text-slate-300">Temperatura de operação</p>
+              <p class="mt-1 text-lg font-bold">até 110°C</p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+              <p class="text-sm text-slate-300">Instalação</p>
+              <p class="mt-1 text-lg font-bold">Horizontal</p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+              <p class="text-sm text-slate-300">Aplicação</p>
+              <p class="mt-1 text-lg font-bold">Circulação de água quente</p>
+            </div>
+          </div>
+
+          <p class="mt-6 text-sm italic text-slate-300">
+            Consulte nossa equipe técnica para verificar a compatibilidade com seu sistema.
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="mt-16">
+        <div class="max-w-5xl rounded-[30px] bg-white border border-slate-200 shadow-sm p-6 md:p-8">
+          <h2 class="text-3xl md:text-4xl font-extrabold leading-tight text-[#1f2937]">
+            Dúvidas frequentes sobre a Motobomba Circuladora Solaris Schneider
+          </h2>
+
+          <div class="mt-8 space-y-8">
+            <div>
+              <h3 class="text-2xl font-extrabold text-[#1f2937]">
+                Essa motobomba serve para qualquer sistema solar?
+              </h3>
+              <p class="mt-3 text-[17px] leading-8 text-slate-700">
+                Sim, a motobomba Solaris Schneider é compatível com a maioria dos sistemas solares térmicos disponíveis, inclusive boilers e coletores planos ou a vácuo.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-extrabold text-[#1f2937]">
+                Pode ser usada com água potável?
+              </h3>
+              <p class="mt-3 text-[17px] leading-8 text-slate-700">
+                Sim. Por ser feita de bronze, ela é segura para uso com água potável e não altera a qualidade da água.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-extrabold text-[#1f2937]">
+                É silenciosa?
+              </h3>
+              <p class="mt-3 text-[17px] leading-8 text-slate-700">
+                Sim. A Solaris Schneider foi desenvolvida para operar com baixo nível de ruído, o que a torna ideal para ambientes residenciais e comerciais.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-extrabold text-[#1f2937]">
+                Como funciona a troca de velocidades?
+              </h3>
+              <p class="mt-3 text-[17px] leading-8 text-slate-700">
+                A motobomba possui um seletor manual que permite ajustar entre as três velocidades de operação, adaptando-se ao fluxo e à necessidade térmica do sistema.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="mt-16">
+        <div class="rounded-[32px] bg-[#eef2f7] border border-slate-200 p-6 md:p-8 lg:p-10">
+          <div class="max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-extrabold leading-tight text-[#1f2937]">
+              Por que comprar a Motobomba Solaris Schneider na Conservadora Paulista?
+            </h2>
+
+            <p class="mt-5 text-[17px] leading-8 text-slate-700">
+              Ao escolher a Conservadora Paulista, você conta com:
+            </p>
+
+            <div class="mt-8 grid md:grid-cols-2 gap-4">
+              <div class="rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
+                <h3 class="text-xl font-extrabold text-[#0E1735]">Produto original</h3>
+                <p class="mt-2 text-slate-600 leading-7">
+                  Produtos 100% originais com garantia de fábrica.
+                </p>
+              </div>
+
+              <div class="rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
+                <h3 class="text-xl font-extrabold text-[#0E1735]">Suporte técnico</h3>
+                <p class="mt-2 text-slate-600 leading-7">
+                  Suporte técnico especializado para tirar suas dúvidas.
+                </p>
+              </div>
+
+              <div class="rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
+                <h3 class="text-xl font-extrabold text-[#0E1735]">Atendimento consultivo</h3>
+                <p class="mt-2 text-slate-600 leading-7">
+                  Indicação do modelo ideal de acordo com a necessidade do seu sistema.
+                </p>
+              </div>
+
+              <div class="rounded-3xl bg-white border border-slate-200 p-5 shadow-sm">
+                <h3 class="text-xl font-extrabold text-[#0E1735]">Mais confiança</h3>
+                <p class="mt-2 text-slate-600 leading-7">
+                  Atendimento focado em segurança, desempenho e durabilidade do equipamento.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#" class="inline-flex items-center justify-center rounded-full bg-[#0E1735] px-7 py-4 text-base font-bold text-white transition hover:scale-[1.02]">
+                Solicitar orçamento
+              </a>
+
+              <a href="#" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-4 text-base font-bold text-[#0E1735] transition hover:scale-[1.02]">
+                Falar com especialista
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>
