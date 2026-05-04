@@ -721,6 +721,14 @@
   }
 </style>
 <script>
+  const btnn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btnn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+<script>
   let reviewIndex = 0;
 
   function moveReviews(direction) {
