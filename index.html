@@ -446,19 +446,20 @@
 <section class="w-full bg-white border-y border-gray-200 overflow-hidden">
   <div class="py-4 md:py-5">
     <div class="relative w-full overflow-hidden">
-      <!-- fade laterais -->
       <div class="absolute left-0 top-0 h-full w-10 md:w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
       <div class="absolute right-0 top-0 h-full w-10 md:w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-      <div id="logoTrack" class="flex items-center will-change-transform">
-        <div id="logoGroup" class="flex items-center gap-6 md:gap-12 shrink-0 px-6 md:px-10">
+      <div id="logoTrack" class="flex items-center w-max will-change-transform">
+        
+        <div id="logoGroup" class="flex items-center gap-6 md:gap-12 shrink-0 px-3 md:px-6">
           <img src="imagens/marca1.webp" alt="Logo 1" class="h-7 md:h-10 w-auto object-contain shrink-0">
           <img src="imagens/marca2.webp" alt="Logo 2" class="h-7 md:h-10 w-auto object-contain shrink-0">
           <img src="imagens/marca3.webp" alt="Logo 3" class="h-7 md:h-10 w-auto object-contain shrink-0">
           <img src="imagens/marca4.webp" alt="Logo 4" class="h-7 md:h-10 w-auto object-contain shrink-0">
           <img src="imagens/marca5.webp" alt="Logo 5" class="h-7 md:h-10 w-auto object-contain shrink-0">
         </div>
-      </div>
+
+        </div>
     </div>
   </div>
 </section>
@@ -1357,71 +1358,64 @@
   });
 </script>
 <script>
-  window.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("load", () => {
     const track = document.getElementById("logoTrack");
     const group = document.getElementById("logoGroup");
 
     if (!track || !group) return;
 
-    function buildInfiniteTrack() {
-      track.innerHTML = "";
-      const original = group.cloneNode(true);
-      original.id = "logoGroupOriginal";
-      track.appendChild(original);
+    let animation = null;
 
-      const viewportWidth = track.parentElement.offsetWidth;
-      const originalWidth = original.offsetWidth;
+    function initCarousel() {
+      // Se já existir uma animação rodando (no caso de um resize), a gente cancela ela
+      if (animation) animation.cancel();
 
-      let totalWidth = originalWidth;
+      // 1. Limpa clones antigos para resetar o estado
+      track.innerHTML = '';
+      track.appendChild(group);
 
-      // duplica até passar bem da largura da viewport
-      while (totalWidth < viewportWidth * 3) {
-        const clone = original.cloneNode(true);
+      const viewWidth = track.parentElement.offsetWidth;
+      const groupWidth = group.offsetWidth;
+
+      if (groupWidth === 0) return;
+
+      // 2. Calcula quantos clones precisa para cobrir a tela inteira sem buracos
+      const clonesNeeded = Math.ceil(viewWidth / groupWidth) + 1;
+
+      for (let i = 0; i < clonesNeeded; i++) {
+        const clone = group.cloneNode(true);
         clone.removeAttribute("id");
+        clone.setAttribute("aria-hidden", "true");
         track.appendChild(clone);
-        totalWidth += originalWidth;
       }
 
-      return original;
+      // 3. Cria a animação nativa do navegador baseada em PIXELS REAIS do grupo original
+      // Isso elimina qualquer bug de porcentagem do CSS
+      animation = track.animate(
+        [
+          { transform: 'translateX(0px)' },
+          { transform: `translateX(-${groupWidth}px)` } // Move exatamente a largura de um grupo
+        ],
+        {
+          duration: groupWidth * 25, // Controla a velocidade (maior número = mais lento)
+          iterations: Infinity,
+          easing: 'linear'
+        }
+      );
     }
 
-    let originalGroup = buildInfiniteTrack();
-    let position = 0;
-    let animationId = null;
+    // Roda a primeira vez
+    initCarousel();
 
-    function getSpeed() {
-      return window.innerWidth < 768 ? 0.35 : 0.5;
-    }
-
-    function animate() {
-      const originalWidth = originalGroup.offsetWidth;
-      position -= getSpeed();
-
-      if (Math.abs(position) >= originalWidth) {
-        position = 0;
-      }
-
-      track.style.transform = `translateX(${position}px)`;
-      animationId = requestAnimationFrame(animate);
-    }
-
-    function restart() {
-      cancelAnimationFrame(animationId);
-      position = 0;
-      track.style.transform = "translateX(0px)";
-      originalGroup = buildInfiniteTrack();
-      animate();
-    }
-
-    animate();
-
+    // Recalcula se o usuário mudar o tamanho da tela (evita quebrar em transição de mobile/desktop)
     let resizeTimeout;
     window.addEventListener("resize", () => {
       clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(restart, 150);
+      resizeTimeout = setTimeout(initCarousel, 200);
     });
   });
 </script>
+
 <script>
   const btnn = document.getElementById("menuBtn");
   const menu = document.getElementById("mobileMenu");
