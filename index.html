@@ -1365,12 +1365,12 @@
     if (!track || !group) return;
 
     let animation = null;
+    // Guardamos a largura inicial da tela para comparar no resize
+    let lastWidth = window.innerWidth; 
 
     function initCarousel() {
-      // Se já existir uma animação rodando (no caso de um resize), a gente cancela ela
       if (animation) animation.cancel();
 
-      // 1. Limpa clones antigos para resetar o estado
       track.innerHTML = '';
       track.appendChild(group);
 
@@ -1379,7 +1379,6 @@
 
       if (groupWidth === 0) return;
 
-      // 2. Calcula quantos clones precisa para cobrir a tela inteira sem buracos
       const clonesNeeded = Math.ceil(viewWidth / groupWidth) + 1;
 
       for (let i = 0; i < clonesNeeded; i++) {
@@ -1389,29 +1388,27 @@
         track.appendChild(clone);
       }
 
-      // 3. Cria a animação nativa do navegador baseada em PIXELS REAIS do grupo original
-      // Isso elimina qualquer bug de porcentagem do CSS
       animation = track.animate(
         [
           { transform: 'translateX(0px)' },
-          { transform: `translateX(-${groupWidth}px)` } // Move exatamente a largura de um grupo
+          { transform: `translateX(-${groupWidth}px)` }
         ],
         {
-          duration: groupWidth * 25, // Controla a velocidade (maior número = mais lento)
+          duration: groupWidth * 30, // Um pouquinho mais lento para dar elegância institucional
           iterations: Infinity,
           easing: 'linear'
         }
       );
     }
 
-    // Roda a primeira vez
     initCarousel();
 
-    // Recalcula se o usuário mudar o tamanho da tela (evita quebrar em transição de mobile/desktop)
-    let resizeTimeout;
     window.addEventListener("resize", () => {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(initCarousel, 200);
+      // TRUQUE DE MESTRE: Só reinicia se a LARGURA mudar (ignora a subida/descida da barra do mobile)
+      if (window.innerWidth !== lastWidth) {
+        lastWidth = window.innerWidth;
+        initCarousel();
+      }
     });
   });
 </script>
