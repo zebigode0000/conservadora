@@ -109,7 +109,9 @@ const rawPosts = [
     { title: "Drenagem de água: como solucionar problemas de inundação", desc: "Durante o verão, em muitos Estados brasileiros, encontramos um grave problema: inundações. Essa complicação, decorrente das fortes chuvas e da ur ..." },
     { title: "Bomba para Esgoto: por que esse equipamento é tão importante?", desc: "O sistema de esgoto é constituído por uma rede de tubulações que levam águas residuais para uma estação de tratamento. Ou seja, trata-se de uma ..." },
     { title: "Manutenção de Piscina: 5 dicas que vão facilitar essa tarefa", desc: "O verão está chegando e o calor bate na porta do Brasil inteiro… Você sabe o que isso significa? Está na hora de prepararmos as piscinas para aq ..." },
-    { title: "Bombas d’água para Condomínios: 5 modelos essenciais", desc: "Ser síndico de um condomínio não é tarefa fácil: muita burocracia para resolver, soluções a serem propostas, lidar com todos os condôminos… ..." }
+    { title: "Bombas d’água para Condomínios: 5 modelos essenciais", desc: "Ser síndico de um condomínio não é tarefa fácil: muita burocracia para resolver, soluções a serem propostas, lidar com todos os condôminos… ..." },
+    { title: "Condomínio Sem Água no Fim de Semana: 4 Sinais de que a Bomba Vai Falhar", desc: "Ruídos estranhos, vibrações e oscilações no painel. Aprenda a identificar os alertas do sistema de bombeamento antes do prédio ficar desabastecido e evite chamados de emergência de madrugada." },
+    { title: "Bomba Antiga vs. Modernização: Quanto o Condomínio Perde na Conta de Luz?", desc: "Equipamentos antigos ou mal dimensionados podem inflar a conta de energia do condomínio em até 30%. Entenda como a troca preventiva se paga sozinha com a economia mensal." }
 ];
 
 const posts = rawPosts.map((post, index) => ({
