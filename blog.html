@@ -1,478 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Blog - Conservadora Paulista</title>
-    <style>
-        .line-clamp-3 {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Conservadora Paulista</title>
+  <meta name="description" content="Confira as últimas notícias e dicas sobre bombas, motobombas, válvulas e instalações hidráulicas separadas pelos nossos especialistas.">
+  <link rel="canonical" href="https://www.conservadorapaulista.com.br/blog.html">
+  
+  <link rel="next" href="https://www.conservadorapaulista.com.br/blog-2.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>.line-clamp-3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}</style>
 </head>
 <body class="bg-white font-sans text-gray-900">
 
-    <header class="absolute top-0 left-0 w-full z-50">
+<header class="absolute top-0 left-0 w-full z-50">
   <nav class="bg-transparent">
     <div class="max-w-7xl px-4 sm:px-6 bg-gray-200/60 backdrop-blur-sm rounded-full m-auto my-3 shadow-lg">
       <div class="h-20 flex items-center justify-between ">
-
         <a href="index.html" class="shrink-0">
           <img src="imagens/logo.webp" alt="Conservadora Paulista" class="h-12 md:h-14 w-auto object-contain">
         </a>
-
         <div class="hidden md:flex items-center gap-4">
           <ul class="flex items-center gap-2 text-sm font-medium text-slate-800">
             <li><a href="index.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Home</a></li>
             <li><a href="contratomanutencao.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Contrato de Manutenção</a></li>
-
-            <li class="relative group">
-              <a href="#" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full flex items-center gap-1 transition">
-                Produtos <span class="text-[10px]">▼</span>
-              </a>
-              <ul class="absolute top-full left-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover:block z-30">
-                <li class="relative group/sub">
-                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Bombas d'água <span>→</span></a>
-                  <ul class="absolute top-0 left-full w-72 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
-                    <li><a href="Produtos/incendio.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Bombas Combate a Incêndio</a></li>
-                    <li><a href="Produtos/monoestagio.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Monoestágio</a></li>
-                    <li><a href="Produtos/multiestagio.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Multiestágio</a></li>
-                    <li><a href="Produtos/hidromassage.html" class="block px-4 py-3 hover:bg-slate-50">Bombas para Hidromassagem</a></li>
-                    <li><a href="Produtos/submersas.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Submersas</a></li>
-                    <li><a href="Produtos/submersiveis.html" class="block px-4 py-3 hover:bg-slate-50">Bombas Submersíveis</a></li>
-                    <li><a href="Produtos/Pressurizacao.html" class="block px-4 py-3 hover:bg-slate-50">Bombas de Pressurização</a></li>
-                    <li><a href="Produtos/recirculacao.html" class="block px-4 py-3 hover:bg-slate-50">Bombas de Recirculação</a></li>
-                    <li><a href="Produtos/esgoto.html" class="block px-4 py-3 hover:bg-slate-50">Bombas para Esgoto</a></li>
-                    <li><a href="Produtos/piscina.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Bombas para Piscinas</a></li>
-                  </ul>
-                </li>
-                <li class="relative group/sub">
-                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50">Válvulas <span>→</span></a>
-                  <ul class="absolute top-0 left-full w-72 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
-                    <li><a href="Produtos/valvularedutora.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Válvula Redutora de Pressão</a></li>
-                    <li><a href="Produtos/valvula-controladora-bomba.html" class="block px-4 py-3 hover:bg-slate-50">Válvula Controladora de Bomba</a></li>
-                    <li><a href="Produtos/valvula-controladora-nivel.html" class="block px-4 py-3 hover:bg-slate-50">Válvula Controladora de Nível</a></li>
-                    <li><a href="Produtos/valvula-alivio-pressao.html" class="block px-4 py-3 hover:bg-slate-50">Válvula de Alívio Rápido de Pressão</a></li>
-                    <li><a href="Produtos/valvula-antecipadora-onda.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Válvula Antecipadora de Onda</a></li>
-                  </ul>
-                </li>
-                <li class="relative group/sub">
-                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Acessórios e Peças <span>→</span></a>
-                  <ul class="absolute top-0 left-full w-64 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
-                    <li><a href="Produtos/conexao-hidraulica.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Conexões Hidráulicas</a></li>
-                    <li><a href="Produtos/filtro-piscina.html" class="block px-4 py-3 hover:bg-slate-50">Filtro para Piscinas</a></li>
-                    <li><a href="Produtos/pecas-bombas.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Peças para Bombas</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-
-            <li class="relative group">
-              <a href="#" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full flex items-center gap-1 transition">
-                Serviços <span class="text-[10px]">▼</span>
-              </a>
-              <ul class="absolute top-full left-0 w-56 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover:block z-30">
-                <li class="relative group/sub">
-                  <a href="#" class="flex justify-between px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Assistência Técnica <span>→</span></a>
-                  <ul class="absolute top-0 left-full w-56 bg-white rounded-2xl shadow-xl border border-slate-200 hidden group-hover/sub:block">
-                    <li><a href="autorizadas.html" class="block px-4 py-3 hover:bg-slate-50 rounded-t-2xl">Autorizada</a></li>
-                    <li><a href="#" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Mais Fabricantes</a></li>
-                  </ul>
-                </li>
-                <li><a href="instEletrica.html" class="block px-4 py-3 hover:bg-slate-50">Instalações Elétricas</a></li>
-                <li><a href="instHidr.html" class="block px-4 py-3 hover:bg-slate-50">Instalações Hidráulicas</a></li>
-                <li><a href="modernInst.html" class="block px-4 py-3 hover:bg-slate-50">Modernização de Instalações</a></li>
-                <li><a href="sistPiscina.html" class="block px-4 py-3 hover:bg-slate-50">Sistemas de Piscinas</a></li>
-                <li><a href="projetos.html" class="block px-4 py-3 hover:bg-slate-50 rounded-b-2xl">Projetos</a></li>
-              </ul>
-            </li>
-
             <li><a href="contato.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Contato</a></li>
             <li><a href="Sobre.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Empresa</a></li>
             <li><a href="blog.html" class="hover:bg-slate-800 hover:text-white px-3 py-2 rounded-full transition">Blog</a></li>
           </ul>
-
-          <a href="https://www.lojabombaspaulista.com.br" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition">
-            Loja Virtual
-          </a>
+          <a href="https://www.lojabombaspaulista.com.br" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition">Loja Virtual</a>
         </div>
-
         <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-slate-200 bg-white/90 text-slate-800">
-          <svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-          <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
     </div>
-
     <div id="mobileMenu" class="md:hidden hidden mt-2 mx-4 rounded-2xl border border-slate-200 bg-white shadow-xl max-h-[80vh] overflow-y-auto">
       <div class="px-4 py-4 space-y-2">
         <a href="index.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Home</a>
         <a href="contratomanutencao.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Contrato de Manutenção</a>
-
-        <details class="group rounded-xl border border-slate-200 bg-slate-50">
-          <summary class="list-none px-4 py-3 flex items-center justify-between cursor-pointer text-slate-800">
-            <span>Produtos</span>
-            <span class="transition group-open:rotate-180">⌄</span>
-          </summary>
-          <div class="px-4 pb-3 space-y-2 text-sm text-slate-700">
-            
-            <details class="group/sub">
-              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
-                Bombas d'água <span class="text-[10px]">▼</span>
-              </summary>
-              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
-                <a href="Produtos/incendio.html" class="block py-2">Bombas Combate a Incêndio</a>
-                <a href="Produtos/monoestagio.html" class="block py-2">Bombas Monoestágio</a>
-                <a href="Produtos/multiestagio.html" class="block py-2">Bombas Multiestágio</a>
-                <a href="Produtos/hidromassage.html" class="block py-2">Bombas para Hidromassagem</a>
-                <a href="Produtos/submersas.html" class="block py-2">Bombas Submersas</a>
-                <a href="Produtos/submersiveis.html" class="block py-2">Bombas Submersíveis</a>
-                <a href="Produtos/Pressurizacao.html" class="block py-2">Bombas de Pressurização</a>
-                <a href="Produtos/recirculacao.html" class="block py-2">Bombas de Recirculação</a>
-                <a href="Produtos/esgoto.html" class="block py-2">Bombas para Esgoto</a>
-                <a href="Produtos/piscina.html" class="block py-2">Bombas para Piscinas</a>
-              </div>
-            </details>
-
-            <details class="group/sub">
-              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
-                Válvulas <span class="text-[10px]">▼</span>
-              </summary>
-              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
-                <a href="Produtos/valvularedutora.html" class="block py-2">Válvula Redutora de Pressão</a>
-                <a href="Produtos/valvula-controladora-bomba.html" class="block py-2">Válvula Controladora de Bomba</a>
-                <a href="Produtos/valvula-controladora-nivel.html" class="block py-2">Válvula Controladora de Nível</a>
-                <a href="Produtos/valvula-alivio-pressao.html" class="block py-2">Válvula de Alívio Rápido de Pressão</a>
-                <a href="Produtos/valvula-antecipadora-onda.html" class="block py-2">Válvula Antecipadora de Onda</a>
-              </div>
-            </details>
-
-            <details class="group/sub">
-              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
-                Acessórios e Peças <span class="text-[10px]">▼</span>
-              </summary>
-              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
-                <a href="Produtos/conexao-hidraulica.html" class="block py-2">Conexões Hidráulicas</a>
-                <a href="Produtos/filtro-piscina.html" class="block py-2">Filtro para Piscinas</a>
-                <a href="Produtos/pecas-bombas.html" class="block py-2">Peças para Bombas</a>
-              </div>
-            </details>
-          </div>
-        </details>
-
-        <details class="group rounded-xl border border-slate-200 bg-slate-50">
-          <summary class="list-none px-4 py-3 flex items-center justify-between cursor-pointer text-slate-800">
-            <span>Serviços</span>
-            <span class="transition group-open:rotate-180">⌄</span>
-          </summary>
-          <div class="px-4 pb-3 space-y-2 text-sm text-slate-700">
-            <details class="group/sub">
-              <summary class="list-none py-2 flex items-center justify-between cursor-pointer font-medium">
-                Assistência Técnica <span class="text-[10px]">▼</span>
-              </summary>
-              <div class="pl-4 space-y-1 border-l border-slate-200 ml-1">
-                <a href="autorizadas.html" class="block py-2">Autorizada</a>
-                <a href="#" class="block py-2">Mais Fabricantes</a>
-              </div>
-            </details>
-            <a href="instEletrica.html" class="block py-2">Instalações Elétricas</a>
-            <a href="instHidr.html" class="block py-2">Instalações Hidráulicas</a>
-            <a href="modernInst.html" class="block py-2">Modernização de Instalações</a>
-            <a href="sistPiscina.html" class="block py-2">Sistemas de Piscinas</a>
-            <a href="projetos.html" class="block py-2">Projetos</a>
-          </div>
-        </details>
-
         <a href="contato.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Contato</a>
         <a href="Sobre.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Empresa</a>
         <a href="blog.html" class="block px-4 py-3 rounded-xl text-slate-800 hover:bg-slate-100">Blog</a>
-
-        <a href="https://www.lojabombaspaulista.com.br" class="block text-center bg-orange-500 text-white px-4 py-3 rounded-xl font-semibold hover:bg-orange-600 transition mt-3">
-          Loja Virtual
-        </a>
+        <a href="https://www.lojabombaspaulista.com.br" class="block text-center bg-orange-500 text-white px-4 py-3 rounded-xl font-semibold hover:bg-orange-600 transition mt-3">Loja Virtual</a>
       </div>
     </div>
   </nav>
 </header>
 
-    <div class="max-w-7xl mx-auto px-6 py-10 mt-20 border-b border-gray-100">
-        <h1 class="text-2xl font-bold mb-2">Blog Conservadora Paulista</h1>
-        <p class="text-gray-500 text-sm">Confira as últimas notícias e dicas separadas pelos nossos especialistas.</p>
-    </div>
+<div class="max-w-7xl mx-auto px-6 py-10 mt-20 border-b border-gray-100">
+  <h1 class="text-2xl font-bold mb-2">Blog Conservadora Paulista</h1>
+  <p class="text-gray-500 text-sm">Confira as últimas notícias e dicas separadas pelos nossos especialistas.</p>
+</div>
 
-    <main class="max-w-7xl mx-auto px-6 py-12">
+<main class="max-w-7xl mx-auto px-6 py-12">
+  <a href="contato.html" class="fixed bottom-[20px] right-[16px] md:bottom-6 md:right-6 z-[9999] bg-[#25D366] p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.434 5.628 1.435h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
+    
+<article class="flex flex-col group">
+  <a href="posts/bomba-dagua-ideal-para-cada-aplicacao-residencial-industrial-ou-predial.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog1.webp" alt="Bomba d’água ideal para cada aplicação: residencial, industrial ou predial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-1/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/bomba-dagua-ideal-para-cada-aplicacao-residencial-industrial-ou-predial.html" class="hover:underline">Bomba d’água ideal para cada aplicação: residencial, industrial ou predial</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">Escolher a bomba d’água ideal é fundamental para garantir eficiência, economia de energia e bom desempenho no abastecimento ou na circulação.</p>
+  <a href="posts/bomba-dagua-ideal-para-cada-aplicacao-residencial-industrial-ou-predial.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
 
-      <a href="contato.html"
-   class="fixed bottom-[20px] right-[16px] md:bottom-6 md:right-6 z-[9999] bg-[#25D366] p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center">
+<article class="flex flex-col group">
+  <a href="posts/bomba-monoestagio-ou-multiestagio-qual-a-diferenca-e-quando-usar-cada-uma.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog2.webp" alt="Bomba monoestágio ou multiestágio: qual a diferença e quando usar cada uma" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-2/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/bomba-monoestagio-ou-multiestagio-qual-a-diferenca-e-quando-usar-cada-uma.html" class="hover:underline">Bomba monoestágio ou multiestágio: qual a diferença e quando usar cada uma</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">Na hora de escolher um sistema de bombeamento eficiente, uma dúvida muito comum entre profissionais da indústria, construção civil, saneamento e.</p>
+  <a href="posts/bomba-monoestagio-ou-multiestagio-qual-a-diferenca-e-quando-usar-cada-uma.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.434 5.628 1.435h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-    </svg>
+<article class="flex flex-col group">
+  <a href="posts/bombas-de-combate-a-incendio-como-funcionam-e-quando-utilizar.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog3.webp" alt="Bombas de combate a incêndio: como funcionam e quando utilizar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-3/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/bombas-de-combate-a-incendio-como-funcionam-e-quando-utilizar.html" class="hover:underline">Bombas de combate a incêndio: como funcionam e quando utilizar</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">As bombas de combate a incêndio desempenham um papel fundamental na proteção de vidas e patrimônios. Presentes em edificações comerciais,.</p>
+  <a href="posts/bombas-de-combate-a-incendio-como-funcionam-e-quando-utilizar.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
 
-</a>
-        <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16"></div>
-        <div id="pagination" class="mt-16 flex justify-center flex-wrap gap-2"></div>
-    </main>
+<article class="flex flex-col group">
+  <a href="posts/dimensionamento-de-motobombas-pressao-fluxo-e-o-que-voce-precisa-saber.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog3.webp" alt="Dimensionamento de motobombas: pressão, fluxo e o que você precisa saber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-4/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/dimensionamento-de-motobombas-pressao-fluxo-e-o-que-voce-precisa-saber.html" class="hover:underline">Dimensionamento de motobombas: pressão, fluxo e o que você precisa saber</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">O dimensionamento de motobombas é um processo essencial para garantir o funcionamento eficiente de sistemas hidráulicos em indústrias,.</p>
+  <a href="posts/dimensionamento-de-motobombas-pressao-fluxo-e-o-que-voce-precisa-saber.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
 
-    <script>
-        const allPosts = [
-            { title: "Bomba d’água ideal para cada aplicação: residencial, industrial ou predial", desc: "Escolher a bomba d’água ideal é fundamental para garantir eficiência, economia de energia e bom desempenho no abastecimento ou na circulação de ...", image: "img_blogs/blog1.webp"},
-            { title: "Bomba monoestágio ou multiestágio: qual a diferença e quando usar cada uma", desc: "Na hora de escolher um sistema de bombeamento eficiente, uma dúvida muito comum entre profissionais da indústria, construção civil, saneamento e i ...", image: "img_blogs/blog2.webp"},
-            { title: "Bombas de combate a incêndio: como funcionam e quando utilizar", desc: "As bombas de combate a incêndio desempenham um papel fundamental na proteção de vidas e patrimônios. Presentes em edificações comerciais, indust ...", image: "img_blogs/blog3.webp" },
-            { title: "Dimensionamento de motobombas: pressão, fluxo e o que você precisa saber", desc: "O dimensionamento de motobombas é um processo essencial para garantir o funcionamento eficiente de sistemas hidráulicos em indústrias, construçõe ...", image: "img_blogs/blog3.webp" },
-            { title: "Como calcular a vazão ideal para sua bomba hidráulica residencial ou comercial", desc: "Escolher a bomba hidráulica correta é essencial para garantir eficiência, economia e durabilidade no sistema hidráulico de residências, comércio ...", image: "img_blogs/blog4.webp" },
-            { title: "Dimensionamento de motobombas: como calcular vazão e pressão ideais para o seu sistema", desc: "O dimensionamento de motobomba é uma etapa fundamental para garantir o funcionamento eficiente de sistemas hidráulicos em residências, condomínios ...", image: "img_blogs/blog5.webp" },
-            { title: "Motobomba FAMAC FMG-Q: características, aplicações e benefícios no uso diário", desc: "As motobombas desempenham um papel essencial em diversas atividades do dia a dia, seja para uso doméstico, agrícola ou industrial. Dentro dessa cate ...", image: "img_blogs/blog6.webp" },
-            { title: "Manutenção Corretiva em Motobombas: Importância, Vantagens e Como Garantir o Melhor Serviço para o Seu Condomínio", desc: "Se tem uma coisa que assusta em qualquer condomínio, é a motobomba parar de funcionar do nada. Já imaginou o transtorno? Falta d’água, elevadore ...", image: "img_blogs/blog7.webp" },
-            { title: "Como escolher a bomba hidráulica ideal para sua necessidade", desc: "As bombas hidráulicas são componentes fundamentais em diversos sistemas mecânicos e hidráulicos, utilizadas para movimentar fluidos com eficiênci ...", image: "img_blogs/blog8.webp" },
-            { title: "Como escolher a bomba d’água ideal para sua necessidade?", desc: "Saber como escolher a bomba d’água certa é fundamental para que o seu projeto tenha o resultado esperado. E, a seguir, estão as melhores dicas pa ...", image: "img_blogs/blog9.webp" },
-            { title: "Instalação hidráulica: como evitar erros comuns no processo e garantir sua durabilidade", desc: "A instalação hidráulica é uma das etapas mais cruciais em qualquer tipo de obra — seja residencial, comercial ou industrial. Ela é responsável ...", image: "img_blogs/blog10.webp"},
-            { title: "Principais problemas em motobombas: como identificar e solucionar falhas", desc: "As motobombas são equipamentos essenciais em diversos setores, como agricultura, construção civil, indústria e abastecimento de água. No entanto, ...", image: "img_blogs/blog11.webp" },
-            { title: "Manutenção corretiva em motobombas: importância e vantagens", desc: "A manutenção corretiva em motobombas é essencial para evitar falhas prolongadas e prejuízos em condomínios. Quando um sistema de bombeamento apre ...", image: "img_blogs/blog12.webp" },
-            { title: "Motobombas em condomínios: a importância de contar com um suporte 24 x 7", desc: "As motobombas em condomínios são equipamentos essenciais para todos os moradores. Elas são responsáveis por abastecer as unidades com água potáv ...", image: "img_blogs/blog13.webp" },
-            { title: "Confira o que é essencial na hora de cuidar de piscina", desc: "Ter uma piscina em casa, principalmente nos dias mais quentes, é um dos melhores investimentos para quem deseja reunir a família e amigos. Para que ...", image: "img_blogs/blog14.webp" },
-            { title: "O que é uma bomba para esgoto e como funciona?", desc: "A bomba para esgoto é indispensável em inúmeros contextos. Mas o que, exatamente, é este equipamento, e como ele funciona? Encontre a resposta dur ...", image: "img_blogs/blog15.webp" },
-            { title: "Confira as principais bombas para piscina", desc: "Conforme as normas primordiais de higiene, a bomba para piscina é primordial na limpeza e manutenção de qualquer piscina, seja ela aquecida ou não ...", image: "img_blogs/blog16.webp"},
-            { title: "Bomba submersa — Principais cuidados na hora da instalação", desc: "A bomba submersa é uma ferramenta essencial em muitos setores, como na irrigação, mineração, construção e gestão de águas residuais. A sua ca ...", image: "img_blogs/blog17.webp" },
-            { title: "Bomba sapo: Saiba quais são as suas principais manutenções", desc: "Não é nenhum exagero afirmar que todos os equipamentos que você usa no dia a dia irão precisar de manutenção em algum momento, e com a bomba sap ...", image: "img_blogs/blog18.webp" },
-            { title: "Como escolher a bomba de água ideal para seu projeto?", desc: "Quando se inicia um projeto de casa, apartamento, condomínio ou comércio, é preciso adquirir a melhor bomba de água. Este equipamento é indispens ...", image: "img_blogs/blog19.webp" },
-            { title: "Como funciona uma bomba de água submersível e suas vantagens", desc: "A bomba de água submersível, como o próprio nome sugere, deve ser usada completamente dentro da água, incluindo bomba e motor. Desse modo, é poss ...", image: "img_blogs/blog20.webp" },
-            { title: "Como escolher a bomba de água ideal para seu projeto? (Parte 2)", desc: "A bomba de água é um equipamento perfeito para quem deseja enviar água de um local para outro. Independente se for para um lugar plano ou para um a ...", image: "img_blogs/blog21.webp" },
-            { title: "Por que o filtro para piscina é indispensável?", desc: "A piscina é perfeita para relaxar, reunir a família e amigos para curtir aquele dia de sol, e até nos dias mais frios, no caso das aquecidas. Para ...", image: "img_blogs/blog22.webp" },
-            { title: "Como a bomba submersível é aplicada no combate a enchentes?", desc: "Com o surgimento dos grandes centros, as chances de ocorrer enchentes aumentaram. Algo muito comum nos períodos de chuvas, como em janeiro, por exemp ...", image: "img_blogs/blog23.webp" },
-            { title: "Qual a importância de contratar uma empresa que segue as NRs", desc: "As NRs (Normas Regulamentadoras) se tratam de regras que visam a prevenção de doenças e acidentes no ambiente de trabalho. Existem as gerais que de ...", image: "img_blogs/blog24.webp" },
-            { title: "Quais são os tipos de contrato de manutenção e benefícios?", desc: "Um contrato de manutenção se trata de um documento com todas as informações sobre os serviços que serão prestados pela empresa ao cliente. Nele ...", image: "img_blogs/blog25.webp" },
-            { title: "Quais são as aplicações da bomba sapo", desc: "A bomba sapo é um tipo de bomba submersa vibratória que é usada totalmente dentro da água. Essa vibração significa que um eletroímã atrai e re ...", image: "img_blogs/blog26.webp" },
-            { title: "Onde a bomba submersa pode ser aplicada?", desc: "A bomba submersa, também conhecida como bomba palito, pode ser utilizada em diversas aplicações. Um dos pontos importantes para se atentar é que e ...", image: "img_blogs/blog27.webp" },
-            { title: "O que é uma bomba vibratória e onde pode ser aplicada?", desc: "A bomba vibratória, também conhecida como bomba sapo, deve ser usada dentro da água e pode ser usada em diversas aplicações. Para aqueles que nec ...", image: "img_blogs/blog28.webp" },
-            { title: "Como escolher a melhor bomba para piscinas", desc: "Ter uma piscina em casa é perfeito para reunir os amigos e a família. Em dias de sol ela é ideal para se refrescar, mas nos dias de frio ela també ...", image: "img_blogs/blog29.webp" },
-            { title: "Quais são os tipos de bomba d’água", desc: "Você sabe o que é uma bomba d’água? Ou quais os tipos existentes desse equipamento? As bombas são equipamentos muito comuns em atividades indust ...", image: "img_blogs/blog30.webp" },
-            { title: "A importância da responsabilidade civil na instalação de motobombas", desc: "Você é apaixonado por ferramentas? Então já deve ter encontrado por aí diversos modelos diferentes de motobombas, não é mesmo? Utilizar essa fe ...", image: "img_blogs/blog31.webp" },
-            { title: "Por que escolher uma empresa especialista em motobomba?", desc: "Existem milhares de empresas que consertam diversos equipamentos, porém, quando não são especializadas na devida área, pode haver a necessidade de ...", image: "img_blogs/blog32.webp" },
-            { title: "Por que contratar uma empresa com apólice de seguros para colaboradores?", desc: "A Conservadora Paulista tem mais de 56 anos de experiência oferecendo as melhores soluções em manutenção de equipamentos para bombeamento de líq ...", image: "img_blogs/blog33.webp" },
-            { title: "Soluções eficientes para economizar água em seu condomínio", desc: "A bomba de água é usada para diversos fins como circular água, encher grandes reservatórios, puxar água no caso de enchentes, etc. Seu uso é con ...", image: "img_blogs/blog34.webp" },
-            { title: "Quando e por quê fazer a manutenção da bomba de água!", desc: "A manutenção da bomba de água deve ser feita para manter a sua capacidade e evitar que ela pare de funcionar precocemente. Separamos os demais mo ...", image: "img_blogs/blog35.webp" },
-            { title: "Quando usar uma válvula redutora de pressão e quais são os seus tipos?", desc: "Inúmeros prédios são construídos todos os dias em todo o país. Um dos problemas que pode ser encontrado pelos construtores e síndicos é a press ...", image: "img_blogs/blog36.webp" },
-            { title: "Saiba o que é e quais são os tipos – pressurizador de água", desc: "O problema de muitas casas, apartamentos e coberturas que não possuem caixa d ‘água ou quando elas são instaladas muito abaixo dos pontos de ...", image: "img_blogs/blog37.webp" },
-            { title: "Entenda o que é, como preservar e quais são os tipos de bomba sapo?", desc: "Se você procura pela melhor opção de bomba sapo para sua residência, comércio ou sítio, está no lugar certo. Aqui na Conservadora Paulista, sem ...", image: "img_blogs/blog38.webp" },
-            { title: "Qual válvula redutora de pressão escolher para meu prédio?", desc: "Há uma norma que estipula a pressão máxima da água, estamos falando da NBR 5626 (ABNT, 1996). Ela determina que a pressão da água não passe de ...", image: "img_blogs/blog39.webp" },
-            { title: "Bomba submersa: saiba tudo sobre a bomba ideal para poços artesianos", desc: "A bomba submersa é a mais indicada para captar a água em poços artesianos. Quer saber mais como ela funciona e quais os cuidados que você deve tom ...", image: "img_blogs/blog40.webp" },
-            { title: "Saiba como escolher Motobomba circuladora", desc: "Para a maioria das pessoas, as bombas têm a função de somente puxar a água de poços, enchentes, entre outras situações. Mas não, elas têm o ...", image: "img_blogs/blog41.webp" },
-            { title: "Para que servem bombas hidráulicas?", desc: "Você sabe o que é ou para que servem bombas hidráulicas? O nome não é incomum aos ouvidos e sua presença no nosso dia a dia é bem maior do que ...", image: "img_blogs/blog42.webp" },
-            { title: "Bomba de puxar água – saiba para que serve e qual escolher", desc: "Imprevistos como enchentes ocorrem todos os anos em diversos lugares do país. No momento em que você mais precisa, é necessário ter com quem conta ...", image: "img_blogs/blog43.webp" },
-            { title: "A Conservadora Paulista é Assistência Técnica FAMAC", desc: "A Conservadora Paulista trabalha constantemente para fornecer as melhores soluções em bombas e motobombas aos nossos clientes com assistências auto ...", image: "img_blogs/blog44.webp" },
-            { title: "Fossa de Esgoto – Como limpá-la corretamente", desc: "Quem mora em apartamento ou trabalha em prédios comerciais já deve ter reparado em algum momento um caminhão estacionado na região da fossa de esg ...", image: "img_blogs/blog45.webp" },
-            { title: "Assistência Técnica Schneider é aqui na Conservadora Paulista!", desc: "A Conservadora Paulista trabalha constantemente para fornecer as melhores soluções em bombas e motobombas aos nossos clientes com assistências auto ...", image: "img_blogs/blog46.webp" },
-            { title: "Assistência técnica Sibrape: para confiar", desc: "Quando investimos em uma das melhores marcas do mercado de bombas e motobombas, é essencial poder ter uma assistência técnica Sibrape para te ajuda ...", image: "img_blogs/blog47.webp" },
-            { title: "Piscina com Tobogã: posso ter em minha casa?", desc: "A piscina com tobogã com certeza é o brinquedo mais procurado entre as crianças e adultos nos clubes, afinal eles misturam diversão com refresco. ...", image: "img_blogs/blog48.webp" },
-            { title: "Assistência Técnica Dancor: a solução para você", desc: "A Conservadora Paulista tem o objetivo de fornecer constantemente as melhores manutenções preventivas e corretivas em seus equipamentos, por isso é ...", image: "img_blogs/blog49.webp" },
-            { title: "Hidráulica – Como resolver esse tipo de problema na sua empresa", desc: "O bom funcionamento de uma empresa passa também pela parte hidráulica como prevenção contra acidentes que podem interromper a produção e causar ...", image: "img_blogs/blog50.webp" },
-            { title: "Assistência Técnica Nautilus – Onde consertar os seus equipamentos?", desc: "A Conservadora Paulista trabalha constantemente para fornecer as melhores soluções em bombas e motobombas aos nossos clientes com assistências auto ...", image: "img_blogs/blog51.webp" },
-            { title: "Chuveiro sem pressão – Descubra como resolver este problema", desc: "Depois de um longo e cansativo dia de trabalho, nada melhor do que poder tomar aquele banho bem relaxante. Mas quando liga, a água não cai. Isso pod ...", image: "img_blogs/blog52.webp" },
-            { title: "Assistência Técnica Rowa – A Conservadora Paulista é a melhor opção!", desc: "A Conservadora Paulista trabalha constantemente para fornecer as melhores soluções em bombas e motobombas aos nossos clientes com assistências auto ...", image: "img_blogs/blog53.webp" },
-            { title: "Como limpar poço artesiano", desc: "O poço artesiano é uma excelente forma de obtenção de água potável de forma confiável e constante. Assim como a caixa d’água, o poço precis ...", image: "img_blogs/blog54.webp" },
-            { title: "Como instalar banheira de hidro", desc: "Objeto de desejo de 10 entre 10 pessoas, a banheira de hidromassagem é ideal para quem quer unir o conforto de um banho relaxante com o status que o ...", image: "img_blogs/blog55.webp" },
-            { title: "Como instalar bomba sapo", desc: "Você já ouviu falar em bomba sapo? Esse nome pode ser estranho, mas o seu uso é mais comum do que pode imaginar. Seu custo-benefício é eficaz e g ...", image: "img_blogs/blog56.webp" },
-            { title: "Como pressurizar rede de incêndio", desc: "A história tem mostrado ao longo dos anos o quão importante tem sido proteger empresas e condomínios com sistemas de proteção a incêndio que atu ...", image: "img_blogs/blog57.webp" },
-            { title: "Diferença entre bomba submersa e submersível", desc: "Existem muitas soluções no mercado para quem quer resolver o problema no transporte de água. Entre essas opções, destacam-se a bomba submersa e a ...", image: "img_blogs/blog58.webp" },
-            { title: "Como puxar água do rio – Escolhendo o equipamento ideal!", desc: "O trabalho de retirar água de reservatórios naturais é complexo e, para ser feito corretamente, é essencial contar com os equipamentos ideais. Nes ...", image: "img_blogs/blog59.webp" },
-            { title: "Piscina com Hidro – 4 vantagens que você precisa conhecer", desc: "Quem nunca quis ter uma piscina com hidro? Para muitos, isso pode parecer somente um luxo, mas você sabia que ter uma bomba para hidromassagem é mai ...", image: "img_blogs/blog60.webp" },
-            { title: "Bombas Sapo – Entenda melhor como funciona esse equipamento", desc: "Procurando por um equipamento extremamente eficiente e com excelente custo-benefício? Então, você precisa conhecer as bombas sapo! Esse tipo de bom ...", image: "img_blogs/blog61.webp" },
-            { title: "Tipos de Bomba d’Água: como escolher a ideal", desc: "As bombas d’água são um dos equipamentos mais importantes para empreendimentos que necessitam transportar grandes volumes de água entre diferente ...", image: "img_blogs/blog62.webp" },
-            { title: "Pressurizador Rowa: 15 razões para escolher um!", desc: "O pressurizador de água é um dos equipamentos mais indicados para resolver problemas de força da água em empreendimentos em geral, principalmente ...", image: "img_blogs/blog63.webp" },
-            { title: "Drenagem de água: como solucionar problemas de inundação", desc: "Durante o verão, em muitos Estados brasileiros, encontramos um grave problema: inundações. Essa complicação, decorrente das fortes chuvas e da ur ...", image: "img_blogs/blog64.webp" },
-            { title: "Bomba para Esgoto: por que esse equipamento é tão importante?", desc: "O sistema de esgoto é constituído por uma rede de tubulações que levam águas residuais para uma estação de tratamento. Ou seja, trata-se de uma ...", image: "img_blogs/blog65.webp" },
-            { title: "Manutenção de Piscina: 5 dicas que vão facilitar essa tarefa", desc: "O verão está chegando e o calor bate na porta do Brasil inteiro… Você sabe o que isso significa? Está na hora de prepararmos as piscinas para aq ...", image: "img_blogs/blog66.webp" },
-            { title: "Bombas d’água para Condomínios: 5 modelos essenciais", desc: "Ser síndico de um condomínio não é tarefa fácil: muita burocracia para resolver, soluções a serem propostas, lidar com todos os condôminos… ...", image: "img_blogs/blog67.webp" },
-            { title: "Condomínio Sem Água no Fim de Semana: 4 Sinais de que a Bomba Vai Falhar", desc: "Ruídos estranhos, vibrações e oscilações no painel. Aprenda a identificar os alertas do sistema de bombeamento antes do prédio ficar desabastecido e evite chamados de emergência de madrugada.", image: "img_blogs/blog68.webp" },
-            { title: "Bomba Antiga vs. Modernização: Quanto o Condomínio Perde na Conta de Luz?", desc: "Equipamentos antigos ou mal dimensionados podem inflar a conta de energia do condomínio em até 30%. Entenda como a troca preventiva se paga sozinha com a economia mensal.", image: "img_blogs/blog69.webp" }
-            
-        ];
+<article class="flex flex-col group">
+  <a href="posts/como-calcular-a-vazao-ideal-para-sua-bomba-hidraulica-residencial-ou-comercial.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog4.webp" alt="Como calcular a vazão ideal para sua bomba hidráulica residencial ou comercial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-5/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/como-calcular-a-vazao-ideal-para-sua-bomba-hidraulica-residencial-ou-comercial.html" class="hover:underline">Como calcular a vazão ideal para sua bomba hidráulica residencial ou comercial</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">Escolher a bomba hidráulica correta é essencial para garantir eficiência, economia e durabilidade no sistema hidráulico de residências,.</p>
+  <a href="posts/como-calcular-a-vazao-ideal-para-sua-bomba-hidraulica-residencial-ou-comercial.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
 
-        const imageSets = {
-            incendio: [
-                "https://images.unsplash.com/photo-1521207418485-99c705420785?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1574263867128-a3d5c1b6d6fd?auto=format&fit=crop&w=1200&q=80"
-            ],
-            piscina: [
-                "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
-            ],
-            esgoto: [
-                "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80"
-            ],
-            submersa: [
-                "https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80"
-            ],
-            pressao: [
-                "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
-            ],
-            drenagem: [
-                "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1200&q=80"
-            ],
-            manutencao: [
-                "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80"
-            ],
-            vibratoria: [
-                "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1200&q=80"
-            ],
-            hidraulica: [
-                "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
-                "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80"
-            ]
-        };
+<article class="flex flex-col group">
+  <a href="posts/dimensionamento-de-motobombas-como-calcular-vazao-e-pressao-ideais-para-o-seu-sistema.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog5.webp" alt="Dimensionamento de motobombas: como calcular vazão e pressão ideais para o seu sistema" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-6/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/dimensionamento-de-motobombas-como-calcular-vazao-e-pressao-ideais-para-o-seu-sistema.html" class="hover:underline">Dimensionamento de motobombas: como calcular vazão e pressão ideais para o seu sistema</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">O dimensionamento de motobomba é uma etapa fundamental para garantir o funcionamento eficiente de sistemas hidráulicos em residências,.</p>
+  <a href="posts/dimensionamento-de-motobombas-como-calcular-vazao-e-pressao-ideais-para-o-seu-sistema.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
 
-        function getCategoryByTitle(title) {
-            const t = title.toLowerCase();
+<article class="flex flex-col group">
+  <a href="posts/motobomba-famac-fmg-q-caracteristicas-aplicacoes-e-beneficios-no-uso-diario.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog6.webp" alt="Motobomba FAMAC FMG-Q: características, aplicações e benefícios no uso diário" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-7/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/motobomba-famac-fmg-q-caracteristicas-aplicacoes-e-beneficios-no-uso-diario.html" class="hover:underline">Motobomba FAMAC FMG-Q: características, aplicações e benefícios no uso diário</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">As motobombas desempenham um papel essencial em diversas atividades do dia a dia, seja para uso doméstico, agrícola ou industrial. Dentro dessa.</p>
+  <a href="posts/motobomba-famac-fmg-q-caracteristicas-aplicacoes-e-beneficios-no-uso-diario.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
 
-            if (t.includes("incêndio") || t.includes("incendio")) return "incendio";
-            if (t.includes("piscina") || t.includes("hidro") || t.includes("tobogã") || t.includes("toboga")) return "piscina";
-            if (t.includes("esgoto") || t.includes("fossa")) return "esgoto";
-            if (t.includes("submersa") || t.includes("submersível") || t.includes("submersivel") || t.includes("poço") || t.includes("poco")) return "submersa";
-            if (t.includes("pressurizador") || t.includes("pressão") || t.includes("pressao") || t.includes("válvula") || t.includes("valvula")) return "pressao";
-            if (t.includes("enchentes") || t.includes("drenagem") || t.includes("rio")) return "drenagem";
-            if (t.includes("bomba sapo") || t.includes("vibratória") || t.includes("vibratoria")) return "vibratoria";
-            if (t.includes("manutenção") || t.includes("manutencao") || t.includes("assistência") || t.includes("assistencia") || t.includes("motobomba")) return "manutencao";
-            return "hidraulica";
-        }
+<article class="flex flex-col group">
+  <a href="posts/manutencao-corretiva-em-motobombas-importancia-vantagens-e-como-garantir-o-melhor-servico-para-o-seu-condominio.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog7.webp" alt="Manutenção Corretiva em Motobombas: Importância, Vantagens e Como Garantir o Melhor Serviço para o Seu Condomínio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-8/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/manutencao-corretiva-em-motobombas-importancia-vantagens-e-como-garantir-o-melhor-servico-para-o-seu-condominio.html" class="hover:underline">Manutenção Corretiva em Motobombas: Importância, Vantagens e Como Garantir o Melhor Serviço para o Seu Condomínio</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">Se tem uma coisa que assusta em qualquer condomínio, é a motobomba parar de funcionar do nada. Já imaginou o transtorno? Falta d’água,.</p>
+  <a href="posts/manutencao-corretiva-em-motobombas-importancia-vantagens-e-como-garantir-o-melhor-servico-para-o-seu-condominio.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
 
-        function getImageByTitle(title, index, attempt = 0) {
-            const category = getCategoryByTitle(title);
-            const images = imageSets[category] || imageSets.hidraulica;
-            return images[(index + attempt) % images.length];
-        }
+<article class="flex flex-col group">
+  <a href="posts/como-escolher-a-bomba-hidraulica-ideal-para-sua-necessidade.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog8.webp" alt="Como escolher a bomba hidráulica ideal para sua necessidade" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-9/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/como-escolher-a-bomba-hidraulica-ideal-para-sua-necessidade.html" class="hover:underline">Como escolher a bomba hidráulica ideal para sua necessidade</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">As bombas hidráulicas são componentes fundamentais em diversos sistemas mecânicos e hidráulicos, utilizadas para movimentar fluidos com.</p>
+  <a href="posts/como-escolher-a-bomba-hidraulica-ideal-para-sua-necessidade.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
 
-        function getFallbackImage(index) {
-            return `https://picsum.photos/seed/blog-${index + 1}/600/350`;
-        }
-
-        const postsPerPage = 10;
-        let currentPage = 1;
-
-        function openPost(index) {
-  const postWithImage = {
-    ...allPosts[index],
-    image: allPosts[index].image
-  };
-
-  localStorage.setItem("selectedPost", JSON.stringify(postWithImage));
-  window.location.href = "post.html";
-}
-
-       function handleImageError(img, index) {
-    const title = allPosts[index].title;
-    const step = img.dataset.step || "custom";
-
-    if (step === "custom") {
-        img.dataset.step = "category";
-        img.src = getImageByTitle(title, index, 0);
-        return;
-    }
-
-    if (step === "category") {
-        img.dataset.step = "fallback";
-        img.src = getFallbackImage(index);
-        return;
-    }
-
-    img.onerror = null;
-}
-
-        function renderPosts(page) {
-    const grid = document.getElementById("blog-grid");
-    grid.innerHTML = "";
-
-    const start = (page - 1) * postsPerPage;
-    const end = start + postsPerPage;
-    const paginatedItems = allPosts.slice(start, end);
-
-    paginatedItems.forEach((post, localIndex) => {
-        const realIndex = start + localIndex;
-        const image = post.image;
-
-        grid.innerHTML += `
-            <article class="flex flex-col group">
-                <div class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md">
-                    <img
-                        src="${image}"
-                        alt="${post.title}"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    >
-                </div>
-
-                <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
-                    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
-                    ${post.title}
-                </h2>
-
-                <p class="text-sm text-gray-600 mb-6 line-clamp-3">
-                    ${post.desc}
-                </p>
-
-                <button onclick="openPost(${realIndex})" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">
-                    Ler mais
-                </button>
-            </article>
-        `;
-    });
-}
-        function renderPagination() {
-            const paginationContainer = document.getElementById('pagination');
-            paginationContainer.innerHTML = '';
-            const totalPages = Math.ceil(allPosts.length / postsPerPage);
-
-            for (let i = 1; i <= totalPages; i++) {
-                const btn = document.createElement('button');
-                btn.innerText = i;
-                btn.className = `px-4 py-2 border border-gray-200 text-sm transition-all ${i === currentPage ? 'bg-[#0a192f] text-white font-bold' : 'hover:bg-gray-100 text-gray-600'}`;
-                btn.onclick = () => {
-                    currentPage = i;
-                    renderPosts(currentPage);
-                    renderPagination();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                };
-                paginationContainer.appendChild(btn);
-            }
-        }
-
-        renderPosts(currentPage);
-        renderPagination();
-    </script>
-    <script>
-  const btnn = document.getElementById("menuBtn");
-  const menu = document.getElementById("mobileMenu");
-
-  btnn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
+<article class="flex flex-col group">
+  <a href="posts/como-escolher-a-bomba-dagua-ideal-para-sua-necessidade.html" class="overflow-hidden mb-6 h-52 bg-gray-100 rounded-md block">
+    <img src="img_blogs/blog9.webp" alt="Como escolher a bomba d’água ideal para sua necessidade?" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://picsum.photos/seed/blog-10/600/350'">
+  </a>
+  <h2 class="text-lg font-bold uppercase mb-4 flex leading-tight">
+    <span class="mr-2 text-xl leading-none text-gray-400 font-normal">+</span>
+    <a href="posts/como-escolher-a-bomba-dagua-ideal-para-sua-necessidade.html" class="hover:underline">Como escolher a bomba d’água ideal para sua necessidade?</a>
+  </h2>
+  <p class="text-sm text-gray-600 mb-6 line-clamp-3">Saber como escolher a bomba d’água certa é fundamental para que o seu projeto tenha o resultado esperado. E, a seguir, estão as melhores dicas.</p>
+  <a href="posts/como-escolher-a-bomba-dagua-ideal-para-sua-necessidade.html" class="mt-auto inline-block w-max bg-[#0a192f] text-white px-8 py-2 rounded-full text-xs font-bold hover:bg-blue-900 transition-colors uppercase tracking-wider">Ler mais</a>
+</article>
+  </div>
+  <div class="mt-16 flex justify-center flex-wrap gap-2"><a href="blog.html" class="px-4 py-2 border border-gray-200 text-sm transition-all bg-[#0a192f] text-white font-bold">1</a><a href="blog-2.html" class="px-4 py-2 border border-gray-200 text-sm transition-all hover:bg-gray-100 text-gray-600">2</a><a href="blog-3.html" class="px-4 py-2 border border-gray-200 text-sm transition-all hover:bg-gray-100 text-gray-600">3</a><a href="blog-4.html" class="px-4 py-2 border border-gray-200 text-sm transition-all hover:bg-gray-100 text-gray-600">4</a><a href="blog-5.html" class="px-4 py-2 border border-gray-200 text-sm transition-all hover:bg-gray-100 text-gray-600">5</a><a href="blog-6.html" class="px-4 py-2 border border-gray-200 text-sm transition-all hover:bg-gray-100 text-gray-600">6</a><a href="blog-7.html" class="px-4 py-2 border border-gray-200 text-sm transition-all hover:bg-gray-100 text-gray-600">7</a></div>
+</main>
+<script>
+const btnn = document.getElementById("menuBtn");
+const menu = document.getElementById("mobileMenu");
+if (btnn) btnn.addEventListener("click", () => menu.classList.toggle("hidden"));
 </script>
 </body>
 </html>
